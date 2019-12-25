@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "TTLakes"; 
+	src: url("../fonts/TTLakes-Black.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+html {
+  box-sizing: border-box;
+  font-family: "TTLakes";
+}
+body {
+	padding: 0;
+  	margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+

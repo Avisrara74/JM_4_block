@@ -1,0 +1,105 @@
+.upper-menu {
+	background-color: #ffffff;
+	border-bottom: 1px solid #D9FFF5;
+}
+
+.upper-menu__items {
+	padding: 16px 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+	.upper-menu__items {
+		padding: 16px 24px;
+	}
+}
+
+.upper-menu__items-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.upper-menu__items-wrap:first-child {
+	justify-content: flex-start;
+}
+
+.upper-menu__items-wrap:last-child {
+	justify-content: flex-end;
+}
+
+.upper-menu__item:not(.upper-menu__logo) {
+	width: 40px;
+	height: 40px;
+}
+
+.upper-menu__item_hidden {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.upper-menu__item_hidden {
+		display: block;
+		margin-right: 16px;
+	}
+}
+
+.upper-menu__burger-menu {
+	background: url("img/burger.svg") no-repeat;
+}
+
+.upper-menu__button-call {
+	background: url("img/call.svg") no-repeat;
+}
+
+.upper-menu__button-chat {
+	background: url("img/chat.svg") no-repeat;
+}
+
+.upper-menu__button-profile {
+	background: url("img/profile.svg") no-repeat;
+	position: relative;
+	margin-right: 48px;
+}
+
+.upper-menu__logo {
+	position: relative;	
+	margin: 0px -2px 0px 8px;
+}
+
+.upper-menu__button-profile:after, .upper-menu__logo:after {
+	position: absolute;
+	content: '';
+	height: 32px;
+	top: 4px;
+	right: -24px;
+	border-left: 2px solid #EAEAEA;
+}
+
+@media only screen and (min-width: 411px) {
+	.upper-menu__logo:after {
+		position: absolute;
+		content: '';
+		height: 32px;
+		top: 4px;
+		left: 0px;
+		border-left: 2px solid #EAEAEA;
+	}
+	.upper-menu__logo {	
+		margin: 0px 24px;
+	}
+}
+
+.upper-menu__logo:after {
+	top: 12px;
+}
+
+.upper-menu__button-repair {
+	background: url("img/repair.svg") no-repeat;
+}
+
+.upper-menu__button-status {
+	background: url("img/checkstatus.svg") no-repeat;
+	margin-left: 16px;
+}
