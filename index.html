@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="upper-menu/__items/upper-menu__items.css" type="text/css">
+	<link rel="stylesheet" href="services/services__main-text/services__main-text.css" type="text/css">
+	<link rel="stylesheet" href="services/services__option-items/services__option-items.css" type="text/css">
+	<link rel="stylesheet" href="services/services__info/services__info.css" type="text/css">
 	<title>Document</title>
 </head>
 <body>
@@ -15,9 +18,9 @@
 			<div class="upper-menu__items">
 				<div class="upper-menu__items-wrap">
 					<div class="upper-menu__item upper-menu__burger-menu"></div>
-					<div class="upper-menu__item upper-menu__logo">
+					<a href="#" class="upper-menu__item upper-menu__logo">
 						<img src="upper-menu/__items/img/Group.svg" alt="logo" class="upper-menu__logo">
-					</div>
+					</a>
 				</div>
 				<div class="upper-menu__items-wrap">
 					<div class="upper-menu__item upper-menu__button-call upper-menu__item_hidden"></div>
@@ -35,21 +38,32 @@
 		<div class="services">
 			<div class="services__main-text">
 				<h1>Услуги и сервисы</h1>
+				<div class="services__user-repair-buttons services__user-repair-buttons_hidden">
+					<span>Оставить заявку</span>
+					<div class="services__button-repair"></div>
+					<span>Статус ремонта</span>
+					<div class="services__button-status"></div>
+				</div>
 			</div>
 			<ul class="services__option-items">
-				<li class="services__item">Ремонтируемые устройства</li>
-				<li class="services__item">Дополнительные услуги</li>
-				<li class="services__item">Цены на услуги</li>
-				<li class="services__item">Адреса сервисных центров</li>
-				<li class="services__item">Специальные цены</li>
-				<li class="services__item">Отзывы</li>
+				<li class="services__item"><a href="#">Ремонтируемые устройства</a></li>
+				<li class="services__item"><a href="#">Дополнительные услуги</a></li>
+				<li class="services__item"><a href="#">Цены на услуги</a></li>
+				<li class="services__item"><a href="#">Адреса сервисных центров</a></li>
+				<li class="services__item"><a href="#">Специальные цены</a></li>
+				<li class="services__item"><a href="#">Отзывы</a></li>
 			</ul>
 			<div class="services__info">
-				<div class="services_info-text">
+				<div class="services__info-text">
 					<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+					<p class="services__hidden-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.
+						<span class="services__hidden-text">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+					</p>
+					
+					<p class="services__see-more">Читать далее</p>
 				</div>
-				<div class="services_main-img">
-					<img src="" alt="">
+				<div class="services__main-img">
+					<img src="services/services__info/img/main-img.png" alt="logo of company">
 				</div>
 			</div>
 		</div>

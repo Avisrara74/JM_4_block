@@ -32,6 +32,7 @@
 .upper-menu__item:not(.upper-menu__logo) {
 	width: 40px;
 	height: 40px;
+	cursor: pointer;
 }
 
 .upper-menu__item_hidden {

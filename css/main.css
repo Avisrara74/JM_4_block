@@ -1,21 +1,54 @@
 @font-face {
-	font-family: "TTLakes"; 
-	src: url("../fonts/TTLakes-Black.ttf") format("truetype"); 
+	font-family: "TTLakes-Regular"; 
+	src: url("../fonts/TTLakes-Regular.eot") format("truetype"); 
+	src: url("../fonts/TTLakes-Regular.woff") format("truetype"); 
+	src: url("../fonts/TTLakes-Regular.ttf") format("truetype"); 
 	font-style: normal; 
 	font-weight: normal; 
 } 
 
-html {
-  box-sizing: border-box;
-  font-family: "TTLakes";
-}
+@font-face {
+	font-family: "TTLakes-Medium"; 
+	src: url("../fonts/TTLakes-Medium.eot") format("truetype"); 
+	src: url("../fonts/TTLakes-Medium.woff") format("truetype"); 
+	src: url("../fonts/TTLakes-Medium.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "TTLakes-Bold"; 
+	src: url("../fonts/TTLakes-Bold.eof") format("truetype"); 
+	src: url("../fonts/TTLakes-Bold.woff") format("truetype"); 
+	src: url("../fonts/TTLakes-Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
 body {
 	padding: 0;
   	margin: 0;
+  	background-color: #F8F8F8;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
+
+body {
+	box-sizing: border-box;
+	font-family: "TTLakes-Medium";
+}
+
+h1 {
+	font-family: "TTLakes-Bold";
+}
+
+p {
+	font-size: 14px;
+}
+
+
 
 
 
