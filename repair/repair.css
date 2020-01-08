@@ -90,6 +90,11 @@
 		display: none;
 	}
 
+	.repair__title {
+		padding-left: 24px;
+		margin-top: 24px;
+	}
+
 	.repair__items > img:first-child {
 		margin-left: 16px;
 		cursor: pointer;
@@ -143,6 +148,11 @@
 }
 
 @media only screen and (min-width: 1120px) {
+	.repair__title {
+		padding-left: 32px;
+		margin-top: 40px;
+	}
+
 	.repair__brands {
 		padding: 24px 32px 0px 32px;
 	}
