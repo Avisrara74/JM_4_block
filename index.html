@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="upper-menu/items/upper-menu__items.css" type="text/css">
@@ -16,6 +16,9 @@
 	<link rel="stylesheet" href="mobile-menu/mobile-menu__nav/mobile-menu__nav.css" type="text/css">
 	<link rel="stylesheet" href="mobile-menu/mobile-menu__footer/mobile-menu__footer.css" type="text/css">
 
+	<link rel="stylesheet" href="repair/repair.css" type="text/css">
+	<link rel="stylesheet" href="repair/swiper-master/package/css/swiper.min.css">
+	
 	<title>Document</title>
 </head>
 <body>
@@ -117,9 +120,116 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="repair">
+			<h2 class="repair__title">Ремонт техники различных брендов</h2>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-2.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-3.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-4.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-5.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-6.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-7.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+					<div class="swiper-slide">
+						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
+						<img src="repair/img/go.svg" alt="выбрать">
+					</div>
+			    </div>
+		    <!-- Add Pagination -->
+		    	<div class="swiper-pagination swiper-pagination-bullet-size"></div>
+		  	</div>
+
+		  	<div class="repair__brands repair__hide">
+				<div class="repair__items">
+					<img src="repair/img/Bitmap.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-2.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-3.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-4.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-5.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-6.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-7.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+				<div class="repair__items">
+					<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
+					<img src="repair/img/go.svg" alt="выбрать">
+				</div>
+		    </div>
+
+			<p class="repair__see-more repair__hide">Показать всё</p>
+		</div>
 	</main>
 
 	<script src="js/mobile-menu.js"></script>
+	<script src="repair/swiper-master/package/js/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	      pagination: {
+	        el: '.swiper-pagination',
+
+	      },
+	      width: 240,
+	      height: 72,
+	      spaceBetween: 16,
+	    });
+	</script>
 </body>
 </html>
 
