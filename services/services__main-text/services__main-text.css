@@ -17,6 +17,8 @@
 	width: 4px;
 	background-color: #41F6D7;
 	position: absolute;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
 }
 
 .services__user-repair-buttons_hidden {

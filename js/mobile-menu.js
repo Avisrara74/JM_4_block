@@ -12,20 +12,45 @@ closeButton.addEventListener("click", function() {
 });
 
 
-/*
-let listItems = mobileMenu.querySelectorAll(".mobile-menu__nav-items");
-for (let i = 0; i < listItems.length; i++) {
-	let list = listItems[i];
 
-	list.addEventListener("click", function() {
-		if (listItems.className === "mobile-menu__nav-items_active") {
-			listItems.classList.remove("mobile-menu__nav-items_active");
+let mobileMenuItems = mobileMenu.querySelector('.mobile-menu__items-wrap');
+let changeLanguage = mobileMenu.querySelector(".mobile-menu__change-language");
+
+
+let deleteActiveClass = function(listWrap) {
+	let items = listWrap.children;
+	if (items[0].parentNode.className === "mobile-menu__items-wrap") {
+		for (let i = 0; i < items.length; i++) {
+			items[i].classList.remove('mobile-menu__nav-items_active');
 		}
-		list.classList.add("mobile-menu__nav-items_active");
-	});
+	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
+		for (let i = 0; i < items.length; i++) {
+			items[i].classList.remove('mobile-menu__change-language_active');
+		}
+	}
 }
 
-*/
+mobileMenuItems.addEventListener('click', function(e) {
+	deleteActiveClass(mobileMenuItems);
+	target = e.target;
+	if (target.tagName == "LI") {
+		target.classList.add('mobile-menu__nav-items_active');
+	} else if (target.tagName == "A"){
+		target.parentNode.classList.add('mobile-menu__nav-items_active');
+	}
+});
+
+changeLanguage.addEventListener('click', function(e) {
+	deleteActiveClass(changeLanguage);
+	target = e.target;
+	target.classList.add('mobile-menu__nav-items_active');
+});
+
+
+
+
+
+
 
 
 
