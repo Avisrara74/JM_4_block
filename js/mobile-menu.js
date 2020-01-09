@@ -11,39 +11,25 @@ closeButton.addEventListener("click", function() {
 	mobileMenu.classList.remove("mobile-menu_visible");
 });
 
-
-
 let mobileMenuItems = mobileMenu.querySelector('.mobile-menu__items-wrap');
 let changeLanguage = mobileMenu.querySelector(".mobile-menu__change-language");
 
-
-let deleteActiveClass = function(listWrap) {
-	let items = listWrap.children;
-	if (items[0].parentNode.className === "mobile-menu__items-wrap") {
-		for (let i = 0; i < items.length; i++) {
-			items[i].classList.remove('mobile-menu__nav-items_active');
-		}
-	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
-		for (let i = 0; i < items.length; i++) {
-			items[i].classList.remove('mobile-menu__change-language_active');
-		}
-	}
-}
-
 mobileMenuItems.addEventListener('click', function(e) {
-	deleteActiveClass(mobileMenuItems);
+	let className = deleteActiveClass(mobileMenuItems, "mobile-menu__nav-items_active");
+	deleteActiveClass(mobileMenuItems, "mobile-menu__nav-items_active");
 	target = e.target;
 	if (target.tagName == "LI") {
-		target.classList.add('mobile-menu__nav-items_active');
+		target.classList.add(className);
 	} else if (target.tagName == "A"){
-		target.parentNode.classList.add('mobile-menu__nav-items_active');
+		target.parentNode.classList.add(className);
 	}
 });
 
 changeLanguage.addEventListener('click', function(e) {
-	deleteActiveClass(changeLanguage);
+	let className = deleteActiveClass(changeLanguage, "mobile-menu__change-language");
+	deleteActiveClass(changeLanguage, "mobile-menu__change-language_active");
 	target = e.target;
-	target.classList.add('mobile-menu__nav-items_active');
+	target.classList.add(className);
 });
 
 
