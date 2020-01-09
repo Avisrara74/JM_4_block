@@ -1,7 +1,3 @@
-let servicesText = document.querySelector(".services__info-text");
-let openHidenText = servicesText.querySelector(".services__see-more");
-
-
 let deleteActiveClass = function(listWrap, className) {
 
 	let deleteCounter = function (items) {
@@ -15,6 +11,7 @@ let deleteActiveClass = function(listWrap, className) {
 		deleteCounter(items);
 	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
 		deleteCounter(items);
-	}
+	} 
 	return className;
 }
+
