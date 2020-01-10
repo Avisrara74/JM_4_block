@@ -20,7 +20,7 @@ $red-tint: #FF3E79;
 	}
 }
 
-%modal-feedback__input {
+%modal-call__input {
 	background: #FFFFFF;
 	border: 1px solid #EAEAEA;
 	border-radius: 8px;
@@ -42,21 +42,8 @@ $red-tint: #FF3E79;
 	}
 }
 
-.blur-effect_visible {
-	transition: opacity 0.3s;
-	position: fixed;
-	height: 8888px;
-	width: 8888px;
-	background-color: #fff;
-	opacity: 0.96;
-	z-index: 2;
-}
 
-.blur-effect_hidden {
-	visibility: hidden;
-}
-
-.modal-feedback {
+.modal-call {
 	max-width: 320px;
 	position: fixed;
 	top: 0;
@@ -150,7 +137,7 @@ $red-tint: #FF3E79;
 	}
 
 	&__input {
-		@extend %modal-feedback__input;
+		@extend %modal-call__input;
 	}
 
 	&__textarea {

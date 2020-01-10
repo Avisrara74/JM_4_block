@@ -20,12 +20,12 @@
 	<link rel="stylesheet" href="repair/swiper-master/package/css/swiper.min.css">
 
 	<link rel="stylesheet" href="modal-feedback/modal-feedback.css" type="text/css">
+	<link rel="stylesheet" href="modal-call/modal-call.css" type="text/css">
 	
 	<title>Document</title>
 </head>
 <body>
-
-
+	<div class="blur-effect_hidden"></div>
 	<header>
 		<div class="upper-menu">
 			<div class="upper-menu__items">
@@ -55,6 +55,16 @@
 				<textarea class="modal-feedback__input modal-feedback__textarea" placeholder="Сообщение"></textarea>
 				<p class="modal-feedback__accept-text">Нажимая "отправить" вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
 				<button class="modal-feedback__submit-button">Отправить <span>></span></button>
+			</form>
+		</div>
+
+		<div class="modal-call modal-call_hidden">
+			<div class="modal-call__close-button"></div>
+			<h2 class="modal-call__title">Заказать звонок</h2>
+			<form action="#" method="post" class="modal-call__form">
+				<input type="tel" class="modal-call__input" placeholder="Телефон">
+				<p class="modal-call__accept-text">Нажимая "отправить" вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+				<button class="modal-call__submit-button">Отправить <span>></span></button>
 			</form>
 		</div>
 	</header>
@@ -233,7 +243,9 @@
 	</main>
 
 	<script src="js/main.js"></script>
-	<script src="js/mobile-menu.js"></script>
+	<script src="mobile-menu/js/mobile-menu.js"></script>
+	<script src="modal-call/js/modal-call.js"></script>
+	<script src="modal-feedback/js/modal-feedback.js"></script>
 	<script src="repair/swiper-master/package/js/swiper.min.js"></script>
 	<script>
 	    var swiper = new Swiper('.swiper-container', {
