@@ -18,6 +18,8 @@
 
 	<link rel="stylesheet" href="repair/repair.css" type="text/css">
 	<link rel="stylesheet" href="repair/swiper-master/package/css/swiper.min.css">
+
+	<link rel="stylesheet" href="modal-feedback/modal-feedback.css" type="text/css">
 	
 	<title>Document</title>
 </head>
@@ -41,6 +43,19 @@
 					<div class="upper-menu__item upper-menu__button-status"></div>
 				</div>
 			</div>
+		</div>
+
+		<div class="modal-feedback modal-feedback_hidden">
+			<div class="modal-feedback__close-button"></div>
+			<h2 class="modal-feedback__title">Обратная связь</h2>
+			<form action="#" method="post" class="modal-feedback__form">
+				<input type="text" class="modal-feedback__input" placeholder="Имя">
+				<input type="tel" class="modal-feedback__input" placeholder="Телефон">
+				<input type="text" class="modal-feedback__input" placeholder="Электронная почта">
+				<textarea class="modal-feedback__input modal-feedback__textarea" placeholder="Сообщение"></textarea>
+				<p class="modal-feedback__accept-text">Нажимая "отправить" вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+				<button class="modal-feedback__submit-button">Отправить <span>></span></button>
+			</form>
 		</div>
 	</header>
 
@@ -85,7 +100,6 @@
 			</div>
 		</div>
 	</nav>
-
 
 	<main>
 		<div class="services">

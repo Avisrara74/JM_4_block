@@ -1,0 +1,144 @@
+/* line 4, SCSS/modal-feedback.scss */
+.modal-feedback__submit-button {
+  width: 136px;
+  height: 32px;
+  text-transform: uppercase;
+  background-color: #FF3E79;
+  border-radius: 32px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.5s, color 0.5s, border 0.5s; }
+  /* line 16, SCSS/modal-feedback.scss */
+  .modal-feedback__submit-button:focus, .modal-feedback__submit-button:hover {
+    background-color: #fff;
+    color: #FF3E79;
+    border: 1px solid #FF3E79; }
+
+/* line 23, SCSS/modal-feedback.scss */
+.modal-feedback__input {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: border 0.3s;
+  font-size: 16px; }
+  /* line 34, SCSS/modal-feedback.scss */
+  .modal-feedback__input:focus, .modal-feedback__input:hover {
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #FF3E79; }
+  /* line 40, SCSS/modal-feedback.scss */
+  .modal-feedback__input::placeholder {
+    color: #B5B6BC; }
+
+/* line 46, SCSS/modal-feedback.scss */
+.modal-feedback {
+  max-width: 320px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 9999px;
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 24px 16px;
+  transition: transform 0.5s;
+  visibility: hidden;
+  transform: translateX(400px); }
+  @media screen and (min-width: 360px) {
+    /* line 46, SCSS/modal-feedback.scss */
+    .modal-feedback {
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); } }
+  @media screen and (min-width: 1440px) {
+    /* line 46, SCSS/modal-feedback.scss */
+    .modal-feedback {
+      padding: 40px 32px;
+      max-width: 440px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+      transform: translateX(550px); } }
+  /* line 72, SCSS/modal-feedback.scss */
+  .modal-feedback_hidden {
+    visibility: visible;
+    transform: translateX(400px); }
+    @media screen and (min-width: 1440px) {
+      /* line 72, SCSS/modal-feedback.scss */
+      .modal-feedback_hidden {
+        visibility: visible;
+        transform: translateX(550px); } }
+  /* line 82, SCSS/modal-feedback.scss */
+  .modal-feedback_visible {
+    visibility: visible;
+    transform: translateX(0px); }
+    @media screen and (min-width: 1440px) {
+      /* line 82, SCSS/modal-feedback.scss */
+      .modal-feedback_visible {
+        visibility: visible;
+        transform: translateX(0px); } }
+  /* line 92, SCSS/modal-feedback.scss */
+  .modal-feedback__close-button {
+    width: 40px;
+    height: 40px;
+    background: url("img/close.svg") no-repeat;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s; }
+    @media screen and (min-width: 1440px) {
+      /* line 92, SCSS/modal-feedback.scss */
+      .modal-feedback__close-button {
+        position: absolute;
+        margin-top: -8px;
+        left: 0;
+        margin-left: -72px;
+        z-index: 10; } }
+    /* line 108, SCSS/modal-feedback.scss */
+    .modal-feedback__close-button:hover {
+      opacity: 0.7; }
+  /* line 113, SCSS/modal-feedback.scss */
+  .modal-feedback__title {
+    position: relative; }
+    @media screen and (min-width: 1440px) {
+      /* line 113, SCSS/modal-feedback.scss */
+      .modal-feedback__title {
+        margin-top: 0; } }
+    /* line 120, SCSS/modal-feedback.scss */
+    .modal-feedback__title:before {
+      content: "";
+      height: 37px;
+      left: -16px;
+      top: -4px;
+      padding: 0;
+      vertical-align: middle;
+      width: 4px;
+      background-color: #41F6D7;
+      position: absolute;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%; }
+      @media screen and (min-width: 1440px) {
+        /* line 120, SCSS/modal-feedback.scss */
+        .modal-feedback__title:before {
+          left: -32px; } }
+  /* line 143, SCSS/modal-feedback.scss */
+  .modal-feedback__textarea {
+    height: 118px;
+    margin-bottom: 0; }
+  /* line 148, SCSS/modal-feedback.scss */
+  .modal-feedback__accept-text {
+    color: #7E7E82;
+    font-size: 14px; }
+    /* line 152, SCSS/modal-feedback.scss */
+    .modal-feedback__accept-text > a {
+      color: #FF3E79;
+      text-decoration: none; }
+  /* line 158, SCSS/modal-feedback.scss */
+  .modal-feedback__submit-button {
+    margin-top: 8px;
+    float: right; }
+    /* line 163, SCSS/modal-feedback.scss */
+    .modal-feedback__submit-button > span {
+      margin-left: 8px;
+      font-size: 1.2em;
+      font-weight: bold; }
