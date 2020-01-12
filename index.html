@@ -5,16 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<link rel="stylesheet" href="upper-menu/items/upper-menu__items.css" type="text/css">
 
-	<link rel="stylesheet" href="services/services__main-text/services__main-text.css" type="text/css">
-	<link rel="stylesheet" href="services/services__option-items/services__option-items.css" type="text/css">
-	<link rel="stylesheet" href="services/services__info/services__info.css" type="text/css">
+	<link rel="stylesheet" href="red-button/red-button.css" type="text/css">
+	<link rel="stylesheet" href="section-title/section-title.css" type="text/css">
 
-	<link rel="stylesheet" href="mobile-menu/mobile-menu.css">
-	<link rel="stylesheet" href="mobile-menu/mobile-menu__header/mobile-menu__header.css" type="text/css">
-	<link rel="stylesheet" href="mobile-menu/mobile-menu__nav/mobile-menu__nav.css" type="text/css">
-	<link rel="stylesheet" href="mobile-menu/mobile-menu__footer/mobile-menu__footer.css" type="text/css">
+	<link rel="stylesheet" href="upper-menu/upper-menu.css" type="text/css">
+
+	<link rel="stylesheet" href="services/services.css" type="text/css">
+
+	<link rel="stylesheet" href="mobile-menu/mobile-menu.css" type="text/css">
 
 	<link rel="stylesheet" href="repair/repair.css" type="text/css">
 	<link rel="stylesheet" href="repair/swiper-master/package/css/swiper.min.css">
@@ -30,223 +29,223 @@
 		<div class="upper-menu">
 			<div class="upper-menu__items">
 				<div class="upper-menu__items-wrap">
-					<div class="upper-menu__item upper-menu__burger-menu"></div>
+					<div class="upper-menu__item upper-menu__burger-menu red-button"></div>
 					<a href="#" class="upper-menu__item upper-menu__logo">
-						<img src="upper-menu/items/img/Group.svg" alt="logo" class="upper-menu__logo">
+						<img src="upper-menu/img/Group.svg" alt="logo" class="upper-menu__logo">
 					</a>
 				</div>
 				<div class="upper-menu__items-wrap">
-					<div class="upper-menu__item upper-menu__button-call upper-menu__item_hidden"></div>
-					<div class="upper-menu__item upper-menu__button-chat upper-menu__item_hidden"></div>
-					<div class="upper-menu__item upper-menu__button-profile upper-menu__item_hidden"></div>
-					<div class="upper-menu__item upper-menu__button-repair"></div>
-					<div class="upper-menu__item upper-menu__button-status"></div>
+					<button class="upper-menu__item upper-menu__button-call upper-menu__item_hidden red-button"></button>
+					<button class="upper-menu__item upper-menu__button-chat upper-menu__item_hidden red-button"></button>
+					<button class="upper-menu__item upper-menu__button-profile upper-menu__item_hidden red-button"></button>
+					<button class="upper-menu__item upper-menu__button-repair red-button"></button>
+					<button class="upper-menu__item upper-menu__button-status red-button"></button>
 				</div>
 			</div>
 		</div>
 
 		<div class="modal-feedback modal-feedback_hidden">
-			<div class="modal-feedback__close-button"></div>
+			<button class="modal-feedback__close-button red-button"></button>
 			<h2 class="modal-feedback__title">Обратная связь</h2>
 			<form action="#" method="post" class="modal-feedback__form">
 				<input type="text" class="modal-feedback__input" placeholder="Имя">
 				<input type="tel" class="modal-feedback__input" placeholder="Телефон">
 				<input type="text" class="modal-feedback__input" placeholder="Электронная почта">
 				<textarea class="modal-feedback__input modal-feedback__textarea" placeholder="Сообщение"></textarea>
-				<p class="modal-feedback__accept-text">Нажимая "отправить" вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
-				<button class="modal-feedback__submit-button">Отправить <span>></span></button>
+				<p class="modal-feedback__accept-text">Нажимая "отправить" вы даете согласие на <a href="#" class="modal-feedback__accept-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-feedback__accept-link">политикой конфиденциальности</a></p>
+				<button class="modal-feedback__submit-button">Отправить <span class="modal-feedback__submit-right-arrow">></span></button>
 			</form>
 		</div>
 
 		<div class="modal-call modal-call_hidden">
-			<div class="modal-call__close-button"></div>
+			<button class="modal-call__close-button red-button"></button>
 			<h2 class="modal-call__title">Заказать звонок</h2>
 			<form action="#" method="post" class="modal-call__form">
 				<input type="tel" class="modal-call__input" placeholder="Телефон">
-				<p class="modal-call__accept-text">Нажимая "отправить" вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
-				<button class="modal-call__submit-button">Отправить <span>></span></button>
+				<p class="modal-call__accept-text">Нажимая "отправить" вы даете согласие на <a href="#" class="modal-call__accept-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-call__accept-link">политикой конфиденциальности</a></p>
+				<button class="modal-call__submit-button">Отправить <span class="modal-call__submim-right-arrow">></span></button>
 			</form>
 		</div>
 	</header>
 
 
-	<nav>
-		<div class="mobile-menu">
+	<div class="mobile-menu">
 
-			<div class="mobile-menu__header">
-				<div class="mobile-menu__button-burger"></div>
-				<a href="#" class="mobile-menu__logo">
-					<img src="mobile-menu/mobile-menu__header/img/Group.svg" alt="logo">
-				</a>
-				<div class="mobile-menu__button-search"></div>
+		<div class="mobile-menu__header">
+			<button class="mobile-menu__button-burger red-button"></button>
+			<a href="#" class="mobile-menu__logo-wrap">
+				<img src="mobile-menu/img/Group.svg" alt="logo" class="mobile-menu__logo">
+			</a>
+			<button class="mobile-menu__button-search red-button"></button>
+		</div>
+
+		<nav class="mobile-menu__wrap">
+			<ul class="mobile-menu__list-wrap">
+				<li class="mobile-menu__list mobile-menu__list_active"><a href="#" class="mobile-menu__list-link">Ремонт техники</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Услуги и сервисы</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Корпоративным клиентам</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Продавцам техники</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Партнерам</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Производителям</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Наши сервисные центры</a></li>
+				<li class="mobile-menu__list"><a href="#" class="mobile-menu__list-link">Контакты</a></li>
+			</ul>
+		</nav>
+
+		<div class="mobile-menu__footer">
+			<div class="mobile-menu__contact-buttons">
+				<button class="mobile-menu__contact-phone red-button"></button>
+				<button class="mobile-menu__contact-chat red-button"></button>
+				<button class="mobile-menu__contact-profile red-button"></button>
 			</div>
-
-			<div class="mobile-menu__nav">
-				<ul class="mobile-menu__items-wrap">
-					<li class="mobile-menu__nav-items mobile-menu__nav-items_active"><a href="#">Ремонт техники</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Услуги и сервисы</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Корпоративным клиентам</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Продавцам техники</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Партнерам</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Производителям</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Наши сервисные центры</a></li>
-					<li class="mobile-menu__nav-items"><a href="#">Контакты</a></li>
-				</ul>
-			</div>
-
-			<div class="mobile-menu__footer">
-				<div class="mobile-menu__contact-buttons">
-					<div class="mobile-menu__contact-phone"></div>
-					<div class="mobile-menu__contact-chat"></div>
-					<div class="mobile-menu__contact-profile"></div>
-				</div>
-				<a href="mailto:mail@cps.com">mail@cps.com</a>
-				<a href="tel:+78008908900" class="mobile-menu__call-us">8 800 890 8900</a>
-				<div class="mobile-menu__change-language">
-					<a href="#" class="mobile-menu__change-language_active">RU</a>
-					<a href="#">EN</a>
-					<a href="#">CH</a>
-				</div>
+			<a href="mailto:mail@cps.com" class="mobile-menu__our-mail mobile-menu__contact-links">mail@cps.com</a>
+			<a href="tel:+78008908900" class="mobile-menu__call-us mobile-menu__contact-links">8 800 890 8900</a>
+			<div class="mobile-menu__change-language">
+				<a href="#" class="mobile-menu__change-language_link mobile-menu__change-language_active">RU</a>
+				<a href="#" class="mobile-menu__change-language_link">EN</a>
+				<a href="#" class="mobile-menu__change-language_link">CH</a>
 			</div>
 		</div>
-	</nav>
+	</div>
+	
 
 	<main>
-		<div class="services">
-			<div class="services__main-text">
-				<h1>Услуги и сервисы</h1>
-				<div class="services__user-repair-buttons services__user-repair-buttons_hidden">
-					<span>Оставить заявку</span>
-					<div class="services__button-repair"></div>
-					<span>Статус ремонта</span>
-					<div class="services__button-status"></div>
+		<section class="services">
+			<div class="services__header">
+				<h1 class="services__title">Услуги и сервисы</h1>
+				<div class="services__user-repair-buttons-wrap services__user-repair-buttons_hidden">
+					<div class="services__user-repair-button-wrap">
+						<span class="services__user-repair-text">Оставить заявку</span>
+						<button class="services__button-repair services__repair-buttons red-button"></button>
+					</div>
+					<div class="services__user-repair-button-wrap">
+						<span class="services__user-repair-text">Статус ремонта</span>
+						<button class="services__button-status services__repair-buttons red-button"></button>
+					</div>
 				</div>
 			</div>
-			<ul class="services__option-items">
-				<li class="services__item"><a href="#">Ремонтируемые устройства</a></li>
-				<li class="services__item"><a href="#">Дополнительные услуги</a></li>
-				<li class="services__item"><a href="#">Цены на услуги</a></li>
-				<li class="services__item"><a href="#">Адреса сервисных центров</a></li>
-				<li class="services__item"><a href="#">Специальные цены</a></li>
-				<li class="services__item"><a href="#">Отзывы</a></li>
+			<ul class="services__list-items">
+				<li class="services__list-item"><a href="#" class="services__list-link">Ремонтируемые устройства</a></li>
+				<li class="services__list-item"><a href="#" class="services__list-link">Дополнительные услуги</a></li>
+				<li class="services__list-item"><a href="#" class="services__list-link">Цены на услуги</a></li>
+				<li class="services__list-item"><a href="#" class="services__list-link">Адреса сервисных центров</a></li>
+				<li class="services__list-item"><a href="#" class="services__list-link">Специальные цены</a></li>
+				<li class="services__list-item"><a href="#" class="services__list-link">Отзывы</a></li>
 			</ul>
 			<div class="services__info">
 				<div class="services__info-text">
-					<span class="services__info-text-wrap">
-						<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+					<div class="services__info-text-wrap">
+						<p class="services__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
 						<p class="services__hidden-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.
-							<span class="services__hidden-text">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
 						</p>
-					</span>
+						<span class="services__hidden-text">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+					</div>
 					<p class="services__see-more">Читать далее</p>
 				</div>
-				<div class="services__main-img">
-					<img src="services/services__info/img/main-img.png" alt="logo of company">
+				<div class="services__main-img-wrap">
+					<img src="services/img/main-img.png" alt="logo of company" class="services__main-img">
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="repair">
-			<h2 class="repair__title">Ремонт техники различных брендов</h2>
+		<section class="repair">
+			<h2 class="section-title">Ремонт техники различных брендов</h2>
 			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-					<div class="swiper-slide">
+			    <ul class="swiper-wrapper">
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-2.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-3.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-4.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-5.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-6.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-7.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-					<div class="swiper-slide">
+					</li>
+					<li class="swiper-slide">
 						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
 						<img src="repair/img/go.svg" alt="выбрать">
-					</div>
-			    </div>
+					</li>
+			    </ul>
 		    <!-- Add Pagination -->
 		    	<div class="swiper-pagination swiper-pagination-bullet-size"></div>
 		  	</div>
 
-		  	<div class="repair__brands repair__hide">
-				<div class="repair__items">
+		  	<ul class="repair__brands repair__hide">
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-2.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-3.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-4.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-5.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-6.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-7.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-				<div class="repair__items">
+				</li>
+				<li class="repair__list-items">
 					<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
 					<img src="repair/img/go.svg" alt="выбрать">
-				</div>
-		    </div>
+				</li>
+		    </ul>
 
 			<p class="repair__see-more repair__hide">Показать всё</p>
-		</div>
+		</section>
 	</main>
 
 	<script src="js/main.js"></script>
-	<script src="mobile-menu/js/mobile-menu.js"></script>
-	<script src="modal-call/js/modal-call.js"></script>
-	<script src="modal-feedback/js/modal-feedback.js"></script>
-	<script src="repair/swiper-master/package/js/swiper.min.js"></script>
+	<script src="js/swiper-master/package/js/swiper.min.js"></script>
 	<script>
 	    var swiper = new Swiper('.swiper-container', {
 	      pagination: {

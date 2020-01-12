@@ -143,13 +143,14 @@ $red-tint: #FF3E79;
 	&__textarea {
 		height: 118px;
 		margin-bottom: 0;
+		resize: none;
 	}
 
 	&__accept-text {
 		color: #7E7E82;
 		font-size: 14px;
 
-		& > a {
+		.modal-call__accept-link {
 			color: $red-tint;
 			text-decoration: none;
 		}
@@ -160,7 +161,7 @@ $red-tint: #FF3E79;
 		margin-top: 8px;
 		float: right;
 
-		& > span {
+		.modal-call__submim-right-arrow {
 			margin-left: 8px;
 			font-size: 1.2em;
 			font-weight: bold;

@@ -124,21 +124,22 @@
   /* line 143, SCSS/modal-call.scss */
   .modal-call__textarea {
     height: 118px;
-    margin-bottom: 0; }
-  /* line 148, SCSS/modal-call.scss */
+    margin-bottom: 0;
+    resize: none; }
+  /* line 149, SCSS/modal-call.scss */
   .modal-call__accept-text {
     color: #7E7E82;
     font-size: 14px; }
-    /* line 152, SCSS/modal-call.scss */
-    .modal-call__accept-text > a {
+    /* line 153, SCSS/modal-call.scss */
+    .modal-call__accept-text .modal-call__accept-link {
       color: #FF3E79;
       text-decoration: none; }
-  /* line 158, SCSS/modal-call.scss */
+  /* line 159, SCSS/modal-call.scss */
   .modal-call__submit-button {
     margin-top: 8px;
     float: right; }
-    /* line 163, SCSS/modal-call.scss */
-    .modal-call__submit-button > span {
+    /* line 164, SCSS/modal-call.scss */
+    .modal-call__submit-button .modal-call__submim-right-arrow {
       margin-left: 8px;
       font-size: 1.2em;
       font-weight: bold; }

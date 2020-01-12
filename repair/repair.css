@@ -49,18 +49,6 @@
 	background-color: #B5B6BC !important;
 }
 
-.repair__title {
-	text-transform: uppercase;
-	color: #7E7E82;
-	font-size: 1.2em;
-	font-family: "TTLakes-Regular"; 
-	font-weight: lighter; 
-	display: block;
-	background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
-	padding: 16px;
-	border-top: 1px solid #D9FFF5;
-}
-
 /* 768+ */
 
 .repair__see-more {
@@ -91,23 +79,18 @@
 		display: none;
 	}
 
-	.repair__title {
-		padding-left: 24px;
-		margin-top: 24px;
-	}
-
-	.repair__items > img:first-child {
+	.repair__list-items > img:first-child {
 		margin-left: 16px;
 		cursor: pointer;
 	}
-	.repair__items > img:last-child {
+	.repair__list-items > img:last-child {
 		margin-right: 16px;
 		transition: background-color, 0.5s;
 		border-radius: 50%;
 		cursor: pointer;
 	}
-	.repair__items > img:last-child:hover,
-	.repair__items > img:last-child:focus {
+	.repair__list-items > img:last-child:hover,
+	.repair__list-items > img:last-child:focus {
 		background-color: #B5B6BC;
 	}
 
@@ -120,7 +103,7 @@
 		padding: 24px 24px 0px 24px;
 	}
 
-	.repair__items {
+	.repair__list-items {
 		border: 1px solid #EAEAEA;
 		flex-grow: 1;
 		width: 224px;
@@ -135,11 +118,11 @@
 		background-color: #FFFFFF;
 	}
 
-	.repair__items:nth-of-type(n+7) {
+	.repair__list-items:nth-of-type(n+7) {
 		display: none;
 	}
 
-	.repair__items:not(:nth-of-type(3n)) {
+	.repair__list-items:not(:nth-of-type(3n)) {
 		margin-right: 24px;
 	}
 
@@ -150,33 +133,28 @@
 }
 
 @media only screen and (min-width: 1120px) {
-	.repair__title {
-		padding-left: 32px;
-		margin-top: 40px;
-	}
-
 	.repair__brands {
 		padding: 24px 32px 0px 32px;
 	}
 
-	.repair__items {
+	.repair__list-items {
 		width: 224px;
 		flex-basis: 22%;
 	}
 
-	.repair__items:nth-of-type(-n+9) {
+	.repair__list-items:nth-of-type(-n+9) {
 		display: flex;
 	}
 
-	.repair__items:nth-of-type(n+9) {
+	.repair__list-items:nth-of-type(n+9) {
 		display: none;
 	}
 
-	.repair__items:not(:nth-of-type(3n)) {
+	.repair__list-items:not(:nth-of-type(3n)) {
 		margin-right: 0px;
 	}
 
-	.repair__items:not(:nth-of-type(4n)) {
+	.repair__list-items:not(:nth-of-type(4n)) {
 		margin-right: 32px;
 	}
 	.repair__see-more {

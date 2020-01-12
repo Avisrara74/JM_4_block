@@ -1,0 +1,12 @@
+.red-button {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+	display: block;
+	border: none;
+}
+
+.red-button:hover, .red-button:focus {
+	opacity: 0.7;
+}
