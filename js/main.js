@@ -148,3 +148,21 @@ let close_call_modal_func = function () {
 	modal_call.classList.add("modal-call_hidden");
 	modal_call.classList.remove("modal-call_visible");
 }
+
+let checkWindowSize = function () {
+	let w = screen.width;
+	if (w >= 1440) {
+		body.classList.add("pc_body");
+		document.querySelector("main").classList.add("pc_main");
+	} else if (w < 1440) {
+		body.classList.remove("pc_body");
+		document.querySelector("main").classList.remove("pc_main");
+	}
+}
+
+checkWindowSize();
+
+window.addEventListener('resize',function() {
+	checkWindowSize();
+});
+

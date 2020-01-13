@@ -1,9 +1,12 @@
 /* main-text */
 
+.main__services {
+	margin-top: 24px;
+}
+
 .services__header {
 	position: relative;
 	display: flex;
-	margin: 24px 0px 0px 0px;
 	height: 100%;
 }
 
@@ -39,15 +42,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.services__header {
-		margin: 24px 0px 0px 0px;
+	.main__services {
+		margin-top: 24px;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
-	.services__header {
-		margin: 42px 0px 0px 0px;
-	}
+	.main__services {
+		margin-top: 42px;
+	}	
 
 	.services__user-repair-buttons_hidden {
 		display: flex;
@@ -116,6 +119,14 @@
 	.services__list-items {
 		margin: 8px auto;
 		flex-wrap: nowrap;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.services__list-items {
+		padding-left: 24px;
+		max-width: 1120px;
+		flex-wrap: wrap;
 	}
 }
 

@@ -98,3 +98,9 @@
 	background: url("img/checkstatus.svg") no-repeat;
 	margin-left: 16px;
 }
+
+@media only screen and (min-width: 1440px) {
+	.upper-menu {
+		display: none;
+	}
+}
