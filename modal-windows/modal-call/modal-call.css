@@ -1,22 +1,4 @@
-/* line 4, SCSS/modal-call.scss */
-.modal-call__submit-button {
-  width: 136px;
-  height: 32px;
-  text-transform: uppercase;
-  background-color: #FF3E79;
-  border-radius: 32px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 12px;
-  transition: background-color 0.5s, color 0.5s, border 0.5s; }
-  /* line 16, SCSS/modal-call.scss */
-  .modal-call__submit-button:focus, .modal-call__submit-button:hover {
-    background-color: #fff;
-    color: #FF3E79;
-    border: 1px solid #FF3E79; }
-
-/* line 23, SCSS/modal-call.scss */
+/* line 3, SCSS/modal-call.scss */
 .modal-call__input {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -27,16 +9,16 @@
   cursor: pointer;
   transition: border 0.3s;
   font-size: 16px; }
-  /* line 34, SCSS/modal-call.scss */
+  /* line 14, SCSS/modal-call.scss */
   .modal-call__input:focus, .modal-call__input:hover {
     border-radius: 8px;
     outline: none;
     border: 1px solid #FF3E79; }
-  /* line 40, SCSS/modal-call.scss */
+  /* line 20, SCSS/modal-call.scss */
   .modal-call__input::placeholder {
     color: #B5B6BC; }
 
-/* line 46, SCSS/modal-call.scss */
+/* line 26, SCSS/modal-call.scss */
 .modal-call {
   max-width: 320px;
   position: fixed;
@@ -50,35 +32,35 @@
   visibility: hidden;
   transform: translateX(400px); }
   @media screen and (min-width: 360px) {
-    /* line 46, SCSS/modal-call.scss */
+    /* line 26, SCSS/modal-call.scss */
     .modal-call {
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); } }
   @media screen and (min-width: 1440px) {
-    /* line 46, SCSS/modal-call.scss */
+    /* line 26, SCSS/modal-call.scss */
     .modal-call {
       padding: 40px 32px;
       max-width: 440px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
       transform: translateX(550px); } }
-  /* line 72, SCSS/modal-call.scss */
+  /* line 52, SCSS/modal-call.scss */
   .modal-call_hidden {
     visibility: visible;
     transform: translateX(400px); }
     @media screen and (min-width: 1440px) {
-      /* line 72, SCSS/modal-call.scss */
+      /* line 52, SCSS/modal-call.scss */
       .modal-call_hidden {
         visibility: visible;
         transform: translateX(550px); } }
-  /* line 82, SCSS/modal-call.scss */
+  /* line 62, SCSS/modal-call.scss */
   .modal-call_visible {
     visibility: visible;
     transform: translateX(0px); }
     @media screen and (min-width: 1440px) {
-      /* line 82, SCSS/modal-call.scss */
+      /* line 62, SCSS/modal-call.scss */
       .modal-call_visible {
         visibility: visible;
         transform: translateX(0px); } }
-  /* line 92, SCSS/modal-call.scss */
+  /* line 72, SCSS/modal-call.scss */
   .modal-call__close-button {
     width: 40px;
     height: 40px;
@@ -87,24 +69,24 @@
     cursor: pointer;
     transition: opacity 0.3s; }
     @media screen and (min-width: 1440px) {
-      /* line 92, SCSS/modal-call.scss */
+      /* line 72, SCSS/modal-call.scss */
       .modal-call__close-button {
         position: absolute;
         margin-top: -8px;
         left: 0;
         margin-left: -72px;
         z-index: 10; } }
-    /* line 108, SCSS/modal-call.scss */
+    /* line 88, SCSS/modal-call.scss */
     .modal-call__close-button:hover {
       opacity: 0.7; }
-  /* line 113, SCSS/modal-call.scss */
+  /* line 93, SCSS/modal-call.scss */
   .modal-call__title {
     position: relative; }
     @media screen and (min-width: 1440px) {
-      /* line 113, SCSS/modal-call.scss */
+      /* line 93, SCSS/modal-call.scss */
       .modal-call__title {
         margin-top: 0; } }
-    /* line 120, SCSS/modal-call.scss */
+    /* line 100, SCSS/modal-call.scss */
     .modal-call__title:before {
       content: "";
       height: 37px;
@@ -118,28 +100,19 @@
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%; }
       @media screen and (min-width: 1440px) {
-        /* line 120, SCSS/modal-call.scss */
+        /* line 100, SCSS/modal-call.scss */
         .modal-call__title:before {
           left: -32px; } }
-  /* line 143, SCSS/modal-call.scss */
+  /* line 123, SCSS/modal-call.scss */
   .modal-call__textarea {
     height: 118px;
     margin-bottom: 0;
     resize: none; }
-  /* line 149, SCSS/modal-call.scss */
+  /* line 129, SCSS/modal-call.scss */
   .modal-call__accept-text {
     color: #7E7E82;
     font-size: 14px; }
-    /* line 153, SCSS/modal-call.scss */
+    /* line 133, SCSS/modal-call.scss */
     .modal-call__accept-text .modal-call__accept-link {
       color: #FF3E79;
       text-decoration: none; }
-  /* line 159, SCSS/modal-call.scss */
-  .modal-call__submit-button {
-    margin-top: 8px;
-    float: right; }
-    /* line 164, SCSS/modal-call.scss */
-    .modal-call__submit-button .modal-call__submim-right-arrow {
-      margin-left: 8px;
-      font-size: 1.2em;
-      font-weight: bold; }

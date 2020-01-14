@@ -51,8 +51,6 @@ let mobile_menu = document.querySelector(".mobile-menu");
 let open_mobile_menu = document.querySelector(".upper-menu__burger-menu");
 open_mobile_menu.addEventListener("click", function() {
 	mobile_menu.classList.add("mobile-menu_visible");
-	body.classList.add("mobile-menu__scroll-hidden");
-
 
 	blur_effect_on();
 	close_call_modal_func();
@@ -61,9 +59,9 @@ open_mobile_menu.addEventListener("click", function() {
 
 let close_mobile_menu = mobile_menu.querySelector(".mobile-menu__button-burger");
 close_mobile_menu.addEventListener("click", function() {
+
 	blur_effect_off();
 	close_mobile_menu_func();
-	body.classList.remove("mobile-menu__scroll-hidden");
 });
 
 let mobile_menu_items = mobile_menu.querySelector('.mobile-menu__list-wrap');
@@ -110,11 +108,13 @@ change_language.addEventListener('click', function(e) {
 let blur_effect_on = function () {
 	blur_effect.classList.add("blur-effect_visible");
 	blur_effect.classList.remove("blur-effect_hidden");
+	body.classList.add("body__scroll-hidden");
 }
 
 let blur_effect_off = function () {
 	blur_effect.classList.remove("blur-effect_visible");
 	blur_effect.classList.add("blur-effect_hidden");
+	body.classList.remove("body__scroll-hidden");
 }
 
 let close_feedback_modal_func = function () {
@@ -137,13 +137,6 @@ let checkWindowSize = function () {
 	if (ww < 768) {
 		swiper_inicialization();
 	}
-	if (ww >= 1440) {
-		body.classList.add("pc_body");
-		body.querySelector("main").classList.add("pc_main");
-	} else if (ww < 1440) {
-		body.classList.remove("pc_body");
-		body.querySelector("main").classList.remove("pc_main");
-	}
 }
 
 let deleteActiveClass = function(listWrap, className) {
@@ -164,12 +157,20 @@ let deleteActiveClass = function(listWrap, className) {
 }
 
 let swiper_inicialization = function() {
-	let swiper = new Swiper('.swiper-container', {
+	let repair_brands = new Swiper('.repair-brands__swiper-container', {
 	  pagination: {
 	    el: '.swiper-pagination',
 	  },
 	  width: 240,
 	  height: 72,
+	  spaceBetween: 16,
+	});
+
+	let repair_items = new Swiper('.repair-items__swiper-container', {
+	  pagination: {
+	    el: '.swiper-pagination',
+	  },
+	  width: 240,
 	  spaceBetween: 16,
 	});
 }

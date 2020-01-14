@@ -1,45 +1,46 @@
-.repair__swiper-container {
+.repair-items__swiper-container {
 	background-color: #F8F8F8;
 }
 
-.repair__swiper-slide {
+.repair-items__swiper-slide {
 	border: 1px solid #EAEAEA;
 	background-color: #fff;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 6px;
-	max-height: 72px;
+	max-height: 180px;
+	height: 180px;
 	margin: 0 auto 40px auto;
 }
 
-.repair__swiper-slide:first-child {
+.repair-items__swiper-slide:first-child {
 	margin-left: 16px;
 }
 
-.repair__swiper-slide img {
+.repair-items__text {
+	margin: 16px;
+	font-weight: bolder;
+}
+
+.repair-items__swiper-slide-img {
 	margin: 16px;
 }
 
-.repair__swiper-slide img:first-child {
-	float: left;
-	cursor: pointer;
-}
-
-.repair__swiper-slide img:last-child {
-	float: right;
+.repair-items__swiper-slide-img:last-child {
+	align-self: flex-end;
 	cursor: pointer;
 	transition: background-color, 0.5s;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.repair__swiper-slide > img:last-child:hover,
-.repair__swiper-slide > img:last-child:focus {
+.repair-items__swiper-slide-img:last-child:hover,
+.repair-items__swiper-slide-img:last-child:focus {
 	background-color: #B5B6BC;
 }
 
-.repair__pagination-bullet-size > span {
+.repair-items__pagination-bullet-size > span {
 	height: 12px;
 	width: 12px;
 	background-color: #DDDDDD;
@@ -52,16 +53,17 @@
 
 /* 768+ */
 
-.repair__see-more {
+.repair-items__see-more {
 	font-size: 16px;
 	font-weight: bolder;
 	position: relative;
 	padding-left: 32px;
 	cursor: pointer;
 	transition: all 0.5s;
+	margin-top: 0;
 }
 
-.repair__see-more:before {
+.repair-items__see-more:before {
 	content: "";
 	background: url("img/expand.svg") no-repeat;
 	height: 22px;
@@ -71,30 +73,30 @@
 	position: absolute;
 }
 
-.repair__hide {
+.repair-items_hide {
 	display: none;
 }
 
 @media only screen and (min-width: 768px) {
-	.repair__list-wrap {
-		transform: translateX(0px) !important;
+	.repair-items_hide {
+		display: block;
 	}
-	.repair__list-item > img:first-child {
+	.repair-items__text:first-child {
 		margin-left: 16px;
-		cursor: pointer;
+		align-self: flex-start;
 	}
-	.repair__list-item > img:last-child {
+	.repair-items__swiper-slide-img {
 		margin-right: 16px;
 		transition: background-color, 0.5s;
 		border-radius: 50%;
 		cursor: pointer;
 	}
-	.repair__list-item > img:last-child:hover,
-	.repair__list-item > img:last-child:focus {
+	.repair-items__swiper-slide-img:hover,
+	.repair-items__swiper-slide-img:focus {
 		background-color: #B5B6BC;
 	}
 
-	.repair__list-item:first-child {
+	.repair-items__list-item:first-child {
 		margin-left: 0;
 	}
 
@@ -102,7 +104,8 @@
 		padding: 0px 24px !important;
 	}
 
-	.swiper-wrapper {
+	.repair-items__list-wrap {
+		transform: translateX(0px) !important;
 		background-color: #F8F8F8;
 		display: flex;
 		flex-direction: row;
@@ -110,12 +113,10 @@
 		justify-content: flex-start;
 		padding-left: 0px;
 	}
-	.repair__list-item {
+	.repair-items__list-item {
 		border: 1px solid #EAEAEA;
-		width: 220px;
 		max-width: auto;
 		flex-grow: 1;
-		height: 72px;
 		margin-bottom: 16px;
 		border-radius: 6px;
 		display: flex;
@@ -126,15 +127,15 @@
 		background-color: #FFFFFF;
 	}
 
-	.repair__list-item:nth-of-type(n+7) {
+	.repair-items__list-item:nth-of-type(n+4) {
 		display: none;
 	}
 
-	.repair__list-item:not(:nth-of-type(3n)) {
+	.repair-items__list-item:not(:nth-of-type(3n)) {
 		margin-right: 24px;
 	}
 
-	.repair__see-more {
+	.repair-items__see-more {
 		display: block;
 		margin-left: 24px;
 	}
@@ -146,27 +147,27 @@
 
 @media only screen and (min-width: 1120px) {
 
-	.repair__list-item {
+	.repair-items__list-item {
 		width: 224px;
 		flex-basis: 22%;
 	}
 
-	.repair__list-item:nth-of-type(-n+9) {
+	.repair-items__list-item:nth-of-type(-n+9) {
 		display: flex;
 	}
 
-	.repair__list-item:nth-of-type(n+9) {
+	.repair-items__list-item:nth-of-type(n+5) {
 		display: none;
 	}
 
-	.repair__list-item:not(:nth-of-type(3n)) {
+	.repair-items__list-item:not(:nth-of-type(3n)) {
 		margin-right: 0px;
 	}
 
-	.repair__list-item:not(:nth-of-type(4n)) {
+	.repair-items__list-item:not(:nth-of-type(4n)) {
 		margin-right: 32px;
 	}
-	.repair__see-more {
+	.repair-items__see-more {
 		display: block;
 		margin-left: 32px;
 	}

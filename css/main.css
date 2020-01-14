@@ -33,11 +33,16 @@ body {
 
 *, *:before, *:after {
 	box-sizing: inherit;
+	outline: none;
 }
 
 body {
 	box-sizing: border-box;
 	font-family: "TTLakes-Medium";
+}
+
+.body__scroll-hidden {
+	overflow: hidden;
 }
 
 h1 {
@@ -48,12 +53,26 @@ p {
 	font-size: 14px;
 }
 
-.pc_body {
-	overflow-x: hidden;
+@media only screen and (min-width: 1440px) {
+	.pc_body {
+		overflow-x: hidden;
+	}
+	.pc_main {
+		padding-left: 320px;
+	}
 }
-.pc_main {
-	padding-left: 320px;
+
+.blur-effect_visible {
+	transition: opacity 0.3s;
+	margin-top: -440px;
+	position: fixed;
+	height: 8888px;
+	width: 8888px;
+	background-color: #fff;
+	opacity: 0.96;
+	z-index: 2;
 }
+
 
 
 

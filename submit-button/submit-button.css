@@ -1,0 +1,24 @@
+/* line 3, SCSS/submit-button.scss */
+.submit-button {
+  width: 136px;
+  height: 32px;
+  text-transform: uppercase;
+  background-color: #FF3E79;
+  border-radius: 32px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 8px;
+  float: right;
+  transition: background-color 0.5s, color 0.5s, border 0.5s; }
+  /* line 17, SCSS/submit-button.scss */
+  .submit-button:focus, .submit-button:hover {
+    background-color: #fff;
+    color: #FF3E79;
+    border: 1px solid #FF3E79; }
+  /* line 23, SCSS/submit-button.scss */
+  .submit-button__arrow {
+    margin-left: 8px;
+    font-size: 1.2em;
+    font-weight: bold; }

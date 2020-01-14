@@ -14,11 +14,7 @@
 	transition: transform 0.5s;
 	transform: translateX(-450px);
 	visibility: hidden;
-	overflow-y: auto;
-}
-
-.mobile-menu__scroll-hidden {
-	overflow: hidden;
+	overflow-y: scroll;
 }
 
 .mobile-menu_hidden {
@@ -30,10 +26,6 @@
 	visibility: visible;
 	transform: translateX(0px);
 	overflow: auto;
-}
-
-.mobile-menu_visible ~ body {
-	position: fixed;
 }
 
 @media only screen and (min-width: 321px) {
@@ -52,10 +44,12 @@
 
 @media only screen and (min-width: 768px) {
 	.mobile-menu {
+		overflow-y: hidden;
+	}
+	.mobile-menu {
 		width: 320px;
 		box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), 
 		-2px 0px 4px rgba(69, 79, 126, 0.02);
-		overflow: hidden;
 	}
 }
 

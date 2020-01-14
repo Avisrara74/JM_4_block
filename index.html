@@ -4,26 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
+	<link rel="stylesheet" href="js/swiper-master/package/css/swiper.min.css">
+
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 
 	<link rel="stylesheet" href="red-button/red-button.css" type="text/css">
+	<link rel="stylesheet" href="submit-button/submit-button.css" type="text/css">
 	<link rel="stylesheet" href="section-title/section-title.css" type="text/css">
 
 	<link rel="stylesheet" href="upper-menu/upper-menu.css" type="text/css">
 
 	<link rel="stylesheet" href="services/services.css" type="text/css">
 
-	<link rel="stylesheet" href="mobile-menu/mobile-menu.css" type="text/css">
+	
 
-	<link rel="stylesheet" href="repair/repair.css" type="text/css">
-	<link rel="stylesheet" href="js/swiper-master/package/css/swiper.min.css">
+	<link rel="stylesheet" href="repair-brands/repair-brands.css" type="text/css">
+	
+	<link rel="stylesheet" href="repair-items/repair-items.css" type="text/css">
 
-	<link rel="stylesheet" href="modal-feedback/modal-feedback.css" type="text/css">
-	<link rel="stylesheet" href="modal-call/modal-call.css" type="text/css">
+	<link rel="stylesheet" href="modal-windows/mobile-menu/mobile-menu.css" type="text/css">
+	<link rel="stylesheet" href="modal-windows/modal-feedback/modal-feedback.css" type="text/css">
+	<link rel="stylesheet" href="modal-windows/modal-call/modal-call.css" type="text/css">
 	
 	<title></title>
 </head>
-<body>
+<body class="pc_body">
 	<div class="blur-effect_hidden"></div>
 	<header>
 		<div class="upper-menu">
@@ -53,7 +58,7 @@
 				<input type="text" class="modal-feedback__input" placeholder="Электронная почта">
 				<textarea class="modal-feedback__input modal-feedback__textarea" placeholder="Сообщение"></textarea>
 				<p class="modal-feedback__accept-text">Нажимая "отправить" вы даете согласие на <a href="#" class="modal-feedback__accept-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-feedback__accept-link">политикой конфиденциальности</a></p>
-				<button class="modal-feedback__submit-button">Отправить <span class="modal-feedback__submit-right-arrow">></span></button>
+				<button class="submit-button">Отправить <span class="submit-button__arrow">></span></button>
 			</form>
 		</div>
 
@@ -63,7 +68,7 @@
 			<form action="#" method="post" class="modal-call__form">
 				<input type="tel" class="modal-call__input" placeholder="Телефон">
 				<p class="modal-call__accept-text">Нажимая "отправить" вы даете согласие на <a href="#" class="modal-call__accept-link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal-call__accept-link">политикой конфиденциальности</a></p>
-				<button class="modal-call__submit-button">Отправить <span class="modal-call__submim-right-arrow">></span></button>
+				<button class="submit-button">Отправить <span class="submit-button__arrow">></span></button>
 			</form>
 		</div>
 	</header>
@@ -109,7 +114,7 @@
 	</div>
 	
 
-	<main>
+	<main class="pc_main">
 		<section class="services main__services">
 			<div class="services__header">
 				<h1 class="services__title">Услуги и сервисы</h1>
@@ -148,55 +153,95 @@
 			</div>
 		</section>
 
-		<section class="repair">
+		<section class="repair-brands">
 			<h2 class="section-title">Ремонт техники различных брендов</h2>
-			<div class="swiper-container repair__swiper-container">
-			    <ul class="swiper-wrapper repair__list-wrap">
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+			<div class="swiper-container repair-brands__swiper-container">
+			    <ul class="swiper-wrapper repair-brands__list-wrap">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-1.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-2.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-2.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-3.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-3.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-4.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-4.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-5.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-5.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-6.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-6.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-7.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-7.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
 					</li>
-					<li class="swiper-slide repair__swiper-slide repair__list-item">
-						<img src="repair/img/Bitmap-1.svg" alt="Название бренда">
-						<img src="repair/img/go.svg" alt="выбрать">
+					<li class="swiper-slide repair-brands__swiper-slide repair-brands__list-item">
+						<img src="repair-brands/img/Bitmap-1.svg" alt="Название бренда" class="repair-brands__swiper-slide-img">
+						<img src="repair-brands/img/go.svg" alt="выбрать" class="repair-brands__swiper-slide-img">
+					</li>
+			    </ul>
+		    <!-- Add Pagination -->
+		    	<div class="swiper-pagination repair-brands__pagination-bullet-size"></div>
+		  	</div>
+			<p class="repair-brands__see-more repair-brands_hide">Показать всё</p>
+		</section>
+
+		<section class="repair-items">
+			<h2 class="section-title">Ремонт различных видов техники</h2>
+			<div class="swiper-container repair-items__swiper-container">
+			    <ul class="swiper-wrapper repair-items__list-wrap">
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт ноутбуков</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
+					</li>
+
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт планшетов</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
+					</li>
+
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт ПК</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
+					</li>
+
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт мониторов</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
+					</li>
+
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт компьютерных мышей</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
+					</li>
+
+					<li class="swiper-slide repair-items__swiper-slide repair-items__list-item">
+						<p class="repair-items__text">Ремонт клавиатур</p>
+						<img src="repair-items/img/go.svg" alt="выбрать" class="repair-items__swiper-slide-img">
 					</li>
 			    </ul>
 		    <!-- Add Pagination -->
 		    	<div class="swiper-pagination repair__pagination-bullet-size"></div>
 		  	</div>
-			<p class="repair__see-more repair__hide">Показать всё</p>
+			<p class="repair-items__see-more repair-items_hide">Показать всё</p>
 		</section>
 	</main>
 
