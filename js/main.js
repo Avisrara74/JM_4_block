@@ -1,23 +1,6 @@
 let body = document.querySelector("body");
 let blur_effect = body.querySelector(".blur-effect_hidden");
 
-let deleteActiveClass = function(listWrap, className) {
-
-	let deleteCounter = function (items) {
-		for (let i = 0; i < items.length; i++) {
-			items[i].classList.remove(className);
-		}
-	}
-
-	let items = listWrap.children;
-	if (items[0].parentNode.className === "mobile-menu__list-wrap") {
-		deleteCounter(items);
-	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
-		deleteCounter(items);
-	} 
-	return className;
-}
-
 /* modal-feedback */
 
 let modal_feedback = document.querySelector(".modal-feedback");
@@ -150,14 +133,45 @@ let close_call_modal_func = function () {
 }
 
 let checkWindowSize = function () {
-	let w = screen.width;
-	if (w >= 1440) {
-		body.classList.add("pc_body");
-		document.querySelector("main").classList.add("pc_main");
-	} else if (w < 1440) {
-		body.classList.remove("pc_body");
-		document.querySelector("main").classList.remove("pc_main");
+	let ww = screen.width;
+	if (ww < 768) {
+		swiper_inicialization();
 	}
+	if (ww >= 1440) {
+		body.classList.add("pc_body");
+		body.querySelector("main").classList.add("pc_main");
+	} else if (ww < 1440) {
+		body.classList.remove("pc_body");
+		body.querySelector("main").classList.remove("pc_main");
+	}
+}
+
+let deleteActiveClass = function(listWrap, className) {
+
+	let deleteCounter = function (items) {
+		for (let i = 0; i < items.length; i++) {
+			items[i].classList.remove(className);
+		}
+	}
+
+	let items = listWrap.children;
+	if (items[0].parentNode.className === "mobile-menu__list-wrap") {
+		deleteCounter(items);
+	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
+		deleteCounter(items);
+	} 
+	return className;
+}
+
+let swiper_inicialization = function() {
+	let swiper = new Swiper('.swiper-container', {
+	  pagination: {
+	    el: '.swiper-pagination',
+	  },
+	  width: 240,
+	  height: 72,
+	  spaceBetween: 16,
+	});
 }
 
 checkWindowSize();
@@ -165,4 +179,3 @@ checkWindowSize();
 window.addEventListener('resize',function() {
 	checkWindowSize();
 });
-

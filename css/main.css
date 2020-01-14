@@ -49,8 +49,6 @@ p {
 }
 
 .pc_body {
-	display: flex;
-	flex-direction: row;
 	overflow-x: hidden;
 }
 .pc_main {

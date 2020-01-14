@@ -75,38 +75,42 @@
 }
 
 @media only screen and (min-width: 768px) {
-	.swiper-container {
-		display: none;
-	}
-
-	.repair__list-items > img:first-child {
+	.swiper-slide > img:first-child {
 		margin-left: 16px;
 		cursor: pointer;
 	}
-	.repair__list-items > img:last-child {
+	.swiper-slide > img:last-child {
 		margin-right: 16px;
 		transition: background-color, 0.5s;
 		border-radius: 50%;
 		cursor: pointer;
 	}
-	.repair__list-items > img:last-child:hover,
-	.repair__list-items > img:last-child:focus {
+	.swiper-slide > img:last-child:hover,
+	.swiper-slide > img:last-child:focus {
 		background-color: #B5B6BC;
 	}
 
-	.repair__brands {
+	.swiper-slide:first-child {
+		margin-left: 0;
+	}
+
+	.swiper-container {
+		padding-right: 48px !important;
+	}
+
+	.swiper-wrapper {
 		background-color: #F8F8F8;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
-		padding: 24px 24px 0px 24px;
+		padding: 0px 24px 0px 24px;
 	}
-
-	.repair__list-items {
+	.swiper-slide {
 		border: 1px solid #EAEAEA;
+		width: 220px;
+		max-width: auto;
 		flex-grow: 1;
-		width: 224px;
 		height: 72px;
 		margin-bottom: 16px;
 		border-radius: 6px;
@@ -118,11 +122,11 @@
 		background-color: #FFFFFF;
 	}
 
-	.repair__list-items:nth-of-type(n+7) {
+	.swiper-slide:nth-of-type(n+7) {
 		display: none;
 	}
 
-	.repair__list-items:not(:nth-of-type(3n)) {
+	.swiper-slide:not(:nth-of-type(3n)) {
 		margin-right: 24px;
 	}
 
@@ -130,31 +134,35 @@
 		display: block;
 		margin-left: 24px;
 	}
+
+	.swiper-pagination {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
-	.repair__brands {
+	.repair_wrapper {
 		padding: 24px 32px 0px 32px;
 	}
 
-	.repair__list-items {
+	.swiper-slide {
 		width: 224px;
 		flex-basis: 22%;
 	}
 
-	.repair__list-items:nth-of-type(-n+9) {
+	.swiper-slide:nth-of-type(-n+9) {
 		display: flex;
 	}
 
-	.repair__list-items:nth-of-type(n+9) {
+	.swiper-slide:nth-of-type(n+9) {
 		display: none;
 	}
 
-	.repair__list-items:not(:nth-of-type(3n)) {
+	.swiper-slide:not(:nth-of-type(3n)) {
 		margin-right: 0px;
 	}
 
-	.repair__list-items:not(:nth-of-type(4n)) {
+	.swiper-slide:not(:nth-of-type(4n)) {
 		margin-right: 32px;
 	}
 	.repair__see-more {
