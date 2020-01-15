@@ -57,19 +57,19 @@ open_mobile_menu.addEventListener("click", function() {
 	close_feedback_modal_func();
 });
 
-let close_mobile_menu = mobile_menu.querySelector(".mobile-menu__button-burger");
+let close_mobile_menu = mobile_menu.querySelector(".mobile-menu__primary-button--button-burger");
 close_mobile_menu.addEventListener("click", function() {
 
 	blur_effect_off();
 	close_mobile_menu_func();
 });
 
-let mobile_menu_items = mobile_menu.querySelector('.mobile-menu__list-wrap');
+let mobile_menu_items = mobile_menu.querySelector('.mobile-menu__list');
 let change_language = mobile_menu.querySelector(".mobile-menu__change-language");
 
 mobile_menu_items.addEventListener('click', function(e) {
-	let className = deleteActiveClass(mobile_menu_items, "mobile-menu__list_active");
-	deleteActiveClass(mobile_menu_items, "mobile-menu__list_active");
+	let className = deleteActiveClass(mobile_menu_items, "mobile-menu__item_active");
+	deleteActiveClass(mobile_menu_items, "mobile-menu__item_active");
 	target = e.target;
 	if (target.tagName == "LI") {
 		target.classList.add(className);
@@ -78,7 +78,7 @@ mobile_menu_items.addEventListener('click', function(e) {
 	}
 });
 
-let mobile_menu__modal_call = mobile_menu.querySelector(".mobile-menu__contact-phone");
+let mobile_menu__modal_call = mobile_menu.querySelector(".mobile-menu__primary-button--contact-phone");
 
 mobile_menu__modal_call.addEventListener("click", function () {
 	modal_call.classList.add("modal-call_visible");
@@ -88,7 +88,7 @@ mobile_menu__modal_call.addEventListener("click", function () {
 	close_feedback_modal_func();
 });
 
-let mobile_menu__modal_feedback = mobile_menu.querySelector(".mobile-menu__contact-chat");
+let mobile_menu__modal_feedback = mobile_menu.querySelector(".mobile-menu__primary-button--contact-chat");
 mobile_menu__modal_feedback.addEventListener("click", function () {
 	modal_feedback.classList.add("modal-feedback_visible");
 
@@ -148,7 +148,7 @@ let deleteActiveClass = function(listWrap, className) {
 	}
 
 	let items = listWrap.children;
-	if (items[0].parentNode.className === "mobile-menu__list-wrap") {
+	if (items[0].parentNode.className === "mobile-menu__list") {
 		deleteCounter(items);
 	} else if (items[0].parentNode.className === "mobile-menu__change-language") {
 		deleteCounter(items);
@@ -180,7 +180,6 @@ let swiper_inicialization = function() {
 	  },
 	  width: 228,
 	  spaceBetween: 16,
-	  freeMode: true,
 	});
 }
 

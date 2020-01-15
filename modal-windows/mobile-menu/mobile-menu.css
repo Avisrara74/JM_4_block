@@ -78,11 +78,11 @@
 	align-items: center;
 }
 
-.mobile-menu__button-burger {
+.mobile-menu__primary-button--button-burger {
 	background: url("img/burger.svg") no-repeat;
 }
 
-.mobile-menu__button-search {
+.mobile-menu__primary-button--button-search {
 	background: url("img/search.svg") no-repeat;
 	margin-left: auto;
 }
@@ -99,12 +99,12 @@
 	color: #1B1C21;
 }
 
-.mobile-menu__list-wrap {
+.mobile-menu__list {
 	list-style: none;
 	padding: 0;
 }
 
-.mobile-menu__list {
+.mobile-menu__item {
 	padding: 12px 0px;
 	white-space: nowrap;
 	position: relative;
@@ -112,18 +112,18 @@
 	display: block;
 }
 
-.mobile-menu__list-link {
+.mobile-menu__item-link {
 	color: #1B1C21;
 	text-decoration: none;
 	font-size: 1.05em;
 }
 
-.mobile-menu__list_active > .mobile-menu__list-link {
+.mobile-menu__item_active > .mobile-menu__item-link {
 	color: #7E7E82;
 	opacity: 0.7;
 }
 
-.mobile-menu__list_active::before {
+.mobile-menu__item_active::before {
 	content: "";
 	height: 32px;
 	width: 4px;
@@ -136,8 +136,8 @@
 	opacity: 1;
 }
 
-.mobile-menu__list:hover:not(.mobile-menu__list_active)::before,
-.mobile-menu__list:focus:not(.mobile-menu__list_active)::before {
+.mobile-menu__item:hover:not(.mobile-menu__item_active)::before,
+.mobile-menu__item:focus:not(.mobile-menu__item_active)::before {
 	content: "";
 	height: 32px;
 	width: 4px;
@@ -157,22 +157,22 @@
 	margin-left: 16px;
 }
 
-.mobile-menu__contact-buttons .red-button  {
+.mobile-menu__contact-buttons > .primary-button {
 	display: inline-block;
 	margin-left: 16px;
 }
 
-.mobile-menu__contact-buttons .red-button:first-child {
+.mobile-menu__contact-buttons > .primary-button:first-child {
 	margin-left: 0;
 }
 
-.mobile-menu__contact-phone {
+.mobile-menu__primary-button--contact-phone {
 	background: url("img/phone.svg") no-repeat;
 }
-.mobile-menu__contact-chat {
+.mobile-menu__primary-button--contact-chat {
 	background: url("img/chat.svg") no-repeat;
 }
-.mobile-menu__contact-profile {
+.mobile-menu__primary-button--contact-profile {
 	background: url("img/profile.svg") no-repeat;
 }
 
