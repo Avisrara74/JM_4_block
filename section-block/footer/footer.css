@@ -1,0 +1,28 @@
+.footer {
+	color: #7E7E82;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 0px 16px 16px 16px;
+	border-top: 1px solid #D9FFF5;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0px 32px 32px 32px;
+	}
+
+	.footer__text:first-child {
+		text-align: left;
+		flex-basis: 33%
+	}
+
+	.footer__text:last-child {
+		text-align: right;
+		flex-basis: 33%
+	}
+}

@@ -1,0 +1,218 @@
+.our-prices__swiper-container {
+	background-color: #F8F8F8;
+}
+
+.our-prices__swiper-slide {
+	border: 1px solid #EAEAEA;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 6px;
+	max-height: 180px;
+	height: 200px;
+	margin: 0 auto 40px auto;
+	font-size: 14px;
+	padding: 16px;
+}
+
+.our-prices__swiper-slide:first-child {
+	margin-left: 16px;
+}
+
+.our-prices__list-wrap {
+	padding-left: 0;
+}
+
+.our-prices__price-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.our-prices__text {
+	width: 80%;
+	margin: 0;
+}
+
+.our-prices__text-info,
+.our-prices__text-price-value,
+.our-prices__text-time-value {
+	position: relative;
+	margin-top: 24px;
+}
+
+.our-prices__text-info:before {
+	content: "Ремонтные услуги";
+}
+
+.our-prices__text-price-value:before {
+	content: "Цена";
+}
+
+.our-prices__text-time-value:before {
+	content: "Срок";
+}
+
+.our-prices__text-info:before,
+.our-prices__text-price-value:before,
+.our-prices__text-time-value:before {
+	position: absolute;
+	transform: translateY(-24px);
+	color: #7E7E82;
+}
+
+.our-prices__text-time-value {
+	flex-basis: 50%;
+}
+
+.our-prices__submit-button {
+	flex-grow: 1;
+	max-width: 120px;
+}
+
+
+.our-prices__pagination-bullet-size > span {
+	height: 12px;
+	width: 12px;
+	background-color: #DDDDDD;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #B5B6BC !important;
+}
+
+.our-prices__hint, 
+.our-prices__get-offer {
+	padding-left: 16px;
+	width: 90%;
+	color: #1B1C21;
+}
+
+.our-prices__get-offer {
+	font-weight: bolder;
+	font-size: 16px;
+	display: block;
+	text-decoration: none;
+	transition: opacity 0.3s;
+	margin-bottom: 40px;
+}
+
+.our-prices__get-offer:hover {
+	opacity: 0.7;
+}
+
+.our-prices__offer-arrow {
+	color: #FF3E79;
+	margin-left: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+	.our-prices__text-info:before,
+	.our-prices__text-price-value:before,
+	.our-prices__text-time-value:before {
+		display: none;
+	}
+
+	.our-prices__list-wrap > li:first-child .our-prices__text-info:before,
+	.our-prices__list-wrap > li:first-child .our-prices__text-price-value:before,
+	.our-prices__list-wrap > li:first-child .our-prices__text-time-value:before {
+		display: block;
+		transform: translateY(-64px);
+	}
+
+	.our-prices__text-info,
+	.our-prices__text-price-value,
+	.our-prices__text-time-value {
+		margin-top: 0px
+	}
+	.our-prices__swiper-slide:first-child {
+		margin-left: 0;
+	}
+
+	.our-prices__swiper-container {
+		padding: 48px 56px 0px 24px;
+	}
+
+	.our-prices__list-wrap {
+		transform: translateX(0px) !important;
+		background-color: #F8F8F8;
+		display: flex;
+		flex-direction: row;
+	}
+	.our-prices__swiper-slide {
+		margin: 0 !important;
+		border: none;
+		padding: 0;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-basis: 100%;
+		background-color: #FFFFFF;
+		height: auto;
+		padding: 16px;
+	}
+
+	.our-prices__submit-button {
+		margin-top: 0;
+	}
+
+	.our-prices__swiper-slide:not(:last-child).our-prices__list-item:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: calc(100% - 32px);
+		margin-left: 16px;
+		border-bottom: 1px solid #EAEAEA;
+	}
+
+	.our-prices__text-info {
+		flex-basis: 55%;
+		margin-top: 0
+	}
+
+	.our-prices__text-price-value {
+		flex-basis: 10%;
+	}
+
+	.our-prices__price-wrap {
+		flex-basis: 30%;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+
+	.our-prices__hint, 
+	.our-prices__get-offer {
+		padding-left: 32px;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.our-prices__hint, 
+	.our-prices__get-offer {
+		padding-left: 32px;
+		width: 35%;
+	}
+
+	.our-prices__text-info {
+		flex-basis: 50%;
+		margin-top: 0
+	}
+
+	.our-prices__text-price-value {
+		flex-basis: 20%;
+	}
+
+	.our-prices__price-wrap {
+		flex-basis: 30%;
+		align-items: center;
+	}
+}

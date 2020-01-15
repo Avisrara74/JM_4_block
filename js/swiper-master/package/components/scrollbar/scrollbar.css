@@ -1,9 +1,11 @@
 /* Scrollbar */
+/* line 2, scrollbar.scss */
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1); }
+  /* line 7, scrollbar.scss */
   .swiper-container-horizontal > .swiper-scrollbar {
     position: absolute;
     left: 1%;
@@ -11,6 +13,7 @@
     z-index: 50;
     height: 5px;
     width: 98%; }
+  /* line 15, scrollbar.scss */
   .swiper-container-vertical > .swiper-scrollbar {
     position: absolute;
     right: 3px;
@@ -19,6 +22,7 @@
     width: 5px;
     height: 98%; }
 
+/* line 24, scrollbar.scss */
 .swiper-scrollbar-drag {
   height: 100%;
   width: 100%;
@@ -28,10 +32,10 @@
   left: 0;
   top: 0; }
 
+/* line 33, scrollbar.scss */
 .swiper-scrollbar-cursor-drag {
   cursor: move; }
 
+/* line 36, scrollbar.scss */
 .swiper-scrollbar-lock {
   display: none; }
-
-/*# sourceMappingURL=scrollbar.css.map */

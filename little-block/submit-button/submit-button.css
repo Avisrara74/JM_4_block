@@ -6,19 +6,22 @@
   background-color: #FF3E79;
   border-radius: 32px;
   border: none;
+  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   font-size: 12px;
   margin-top: 8px;
   float: right;
   transition: background-color 0.5s, color 0.5s, border 0.5s; }
-  /* line 17, SCSS/submit-button.scss */
+  /* line 18, SCSS/submit-button.scss */
   .submit-button:focus, .submit-button:hover {
     background-color: #fff;
     color: #FF3E79;
-    border: 1px solid #FF3E79; }
-  /* line 23, SCSS/submit-button.scss */
+    border: 1px solid #FF3E79;
+    box-sizing: border-box; }
+  /* line 24, SCSS/submit-button.scss */
   .submit-button__arrow {
     margin-left: 8px;
     font-size: 1.2em;
+    box-sizing: border-box;
     font-weight: bold; }

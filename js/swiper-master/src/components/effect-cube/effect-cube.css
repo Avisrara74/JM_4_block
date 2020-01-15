@@ -1,5 +1,7 @@
+/* line 1, effect-cube.scss */
 .swiper-container-cube {
   overflow: visible; }
+  /* line 3, effect-cube.scss */
   .swiper-container-cube .swiper-slide {
     pointer-events: none;
     backface-visibility: hidden;
@@ -8,18 +10,24 @@
     transform-origin: 0 0;
     width: 100%;
     height: 100%; }
+    /* line 11, effect-cube.scss */
     .swiper-container-cube .swiper-slide .swiper-slide {
       pointer-events: none; }
+  /* line 15, effect-cube.scss */
   .swiper-container-cube.swiper-container-rtl .swiper-slide {
     transform-origin: 100% 0; }
+  /* line 19, effect-cube.scss */
   .swiper-container-cube .swiper-slide-active, .swiper-container-cube .swiper-slide-active .swiper-slide-active {
     pointer-events: auto; }
+  /* line 23, effect-cube.scss */
   .swiper-container-cube .swiper-slide-active, .swiper-container-cube .swiper-slide-next, .swiper-container-cube .swiper-slide-prev, .swiper-container-cube .swiper-slide-next + .swiper-slide {
     pointer-events: auto;
     visibility: visible; }
+  /* line 27, effect-cube.scss */
   .swiper-container-cube .swiper-slide-shadow-top, .swiper-container-cube .swiper-slide-shadow-bottom, .swiper-container-cube .swiper-slide-shadow-left, .swiper-container-cube .swiper-slide-shadow-right {
     z-index: 0;
     backface-visibility: hidden; }
+  /* line 31, effect-cube.scss */
   .swiper-container-cube .swiper-cube-shadow {
     position: absolute;
     left: 0;
@@ -31,5 +39,3 @@
     -webkit-filter: blur(50px);
     filter: blur(50px);
     z-index: 0; }
-
-/*# sourceMappingURL=effect-cube.css.map */

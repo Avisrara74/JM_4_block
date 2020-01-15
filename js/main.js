@@ -173,6 +173,15 @@ let swiper_inicialization = function() {
 	  width: 240,
 	  spaceBetween: 16,
 	});
+
+	let our_prices = new Swiper('.our-prices__swiper-container', {
+	  pagination: {
+	    el: '.swiper-pagination',
+	  },
+	  width: 228,
+	  spaceBetween: 16,
+	  freeMode: true,
+	});
 }
 
 checkWindowSize();

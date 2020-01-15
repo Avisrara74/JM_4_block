@@ -1,0 +1,118 @@
+/* line 3, modal-call.scss */
+.modal-call__input {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: border 0.3s;
+  font-size: 16px; }
+  /* line 14, modal-call.scss */
+  .modal-call__input:focus, .modal-call__input:hover {
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #FF3E79; }
+  /* line 20, modal-call.scss */
+  .modal-call__input::placeholder {
+    color: #B5B6BC; }
+
+/* line 26, modal-call.scss */
+.modal-call {
+  max-width: 320px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 9999px;
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 24px 16px;
+  transition: transform 0.5s;
+  visibility: hidden;
+  transform: translateX(400px); }
+  @media screen and (min-width: 360px) {
+    /* line 26, modal-call.scss */
+    .modal-call {
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02); } }
+  @media screen and (min-width: 1440px) {
+    /* line 26, modal-call.scss */
+    .modal-call {
+      padding: 40px 32px;
+      max-width: 440px;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+      transform: translateX(550px); } }
+  /* line 52, modal-call.scss */
+  .modal-call_hidden {
+    visibility: visible;
+    transform: translateX(400px); }
+    @media screen and (min-width: 1440px) {
+      /* line 52, modal-call.scss */
+      .modal-call_hidden {
+        visibility: visible;
+        transform: translateX(550px); } }
+  /* line 62, modal-call.scss */
+  .modal-call_visible {
+    visibility: visible;
+    transform: translateX(0px); }
+    @media screen and (min-width: 1440px) {
+      /* line 62, modal-call.scss */
+      .modal-call_visible {
+        visibility: visible;
+        transform: translateX(0px); } }
+  /* line 72, modal-call.scss */
+  .modal-call__close-button {
+    width: 40px;
+    height: 40px;
+    background: url("img/close.svg") no-repeat;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s; }
+    @media screen and (min-width: 1440px) {
+      /* line 72, modal-call.scss */
+      .modal-call__close-button {
+        position: absolute;
+        margin-top: -8px;
+        left: 0;
+        margin-left: -72px;
+        z-index: 10; } }
+    /* line 88, modal-call.scss */
+    .modal-call__close-button:hover {
+      opacity: 0.7; }
+  /* line 93, modal-call.scss */
+  .modal-call__title {
+    position: relative; }
+    @media screen and (min-width: 1440px) {
+      /* line 93, modal-call.scss */
+      .modal-call__title {
+        margin-top: 0; } }
+    /* line 100, modal-call.scss */
+    .modal-call__title:before {
+      content: "";
+      height: 37px;
+      left: -16px;
+      top: -4px;
+      padding: 0;
+      vertical-align: middle;
+      width: 4px;
+      background-color: #41F6D7;
+      position: absolute;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%; }
+      @media screen and (min-width: 1440px) {
+        /* line 100, modal-call.scss */
+        .modal-call__title:before {
+          left: -32px; } }
+  /* line 123, modal-call.scss */
+  .modal-call__textarea {
+    height: 118px;
+    margin-bottom: 0;
+    resize: none; }
+  /* line 129, modal-call.scss */
+  .modal-call__accept-text {
+    color: #7E7E82;
+    font-size: 14px; }
+    /* line 133, modal-call.scss */
+    .modal-call__accept-text .modal-call__accept-link {
+      color: #FF3E79;
+      text-decoration: none; }

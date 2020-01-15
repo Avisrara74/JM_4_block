@@ -17,6 +17,10 @@
 	margin-left: 16px;
 }
 
+.repair-brands__list-wrap {
+	padding-left: 0;
+}
+
 .repair-brands__swiper-slide-img {
 	margin: 16px;
 }
@@ -99,8 +103,8 @@
 		margin-left: 0;
 	}
 
-	.swiper-container {
-		padding: 0px 24px !important;
+	.repair-brands__swiper-container {
+		padding: 0px 24px;
 	}
 
 	.swiper-wrapper {

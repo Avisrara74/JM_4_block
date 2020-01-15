@@ -1,4 +1,5 @@
 /* a11y */
+/* line 2, a11y.scss */
 .swiper-container .swiper-notification {
   position: absolute;
   left: 0;
@@ -6,5 +7,3 @@
   pointer-events: none;
   opacity: 0;
   z-index: -1000; }
-
-/*# sourceMappingURL=a11y.css.map */

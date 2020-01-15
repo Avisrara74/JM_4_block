@@ -1,6 +1,8 @@
+/* line 1, core.scss */
 :root {
   --swiper-theme-color: $themeColor; }
 
+/* line 4, core.scss */
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -11,9 +13,11 @@
   /* Fix of Webkit flickering */
   z-index: 1; }
 
+/* line 14, core.scss */
 .swiper-container-vertical > .swiper-wrapper {
   flex-direction: column; }
 
+/* line 17, core.scss */
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -23,21 +27,26 @@
   transition-property: transform;
   box-sizing: content-box; }
 
+/* line 26, core.scss */
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0); }
 
+/* line 30, core.scss */
 .swiper-container-multirow > .swiper-wrapper {
   flex-wrap: wrap; }
 
+/* line 33, core.scss */
 .swiper-container-multirow-column > .swiper-wrapper {
   flex-wrap: wrap;
   flex-direction: column; }
 
+/* line 37, core.scss */
 .swiper-container-free-mode > .swiper-wrapper {
   transition-timing-function: ease-out;
   margin: 0 auto; }
 
+/* line 41, core.scss */
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
@@ -45,21 +54,27 @@
   position: relative;
   transition-property: transform; }
 
+/* line 48, core.scss */
 .swiper-slide-invisible-blank {
   visibility: hidden; }
 
 /* Auto Height */
+/* line 53, core.scss */
 .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
   height: auto; }
+/* line 57, core.scss */
 .swiper-container-autoheight .swiper-wrapper {
   align-items: flex-start;
   transition-property: transform, height; }
 
 /* 3D Effects */
+/* line 64, core.scss */
 .swiper-container-3d {
   perspective: 1200px; }
+  /* line 66, core.scss */
   .swiper-container-3d .swiper-wrapper, .swiper-container-3d .swiper-slide, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top, .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-cube-shadow {
     transform-style: preserve-3d; }
+  /* line 69, core.scss */
   .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top, .swiper-container-3d .swiper-slide-shadow-bottom {
     position: absolute;
     left: 0;
@@ -68,31 +83,38 @@
     height: 100%;
     pointer-events: none;
     z-index: 10; }
+  /* line 78, core.scss */
   .swiper-container-3d .swiper-slide-shadow-left {
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  /* line 81, core.scss */
   .swiper-container-3d .swiper-slide-shadow-right {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  /* line 84, core.scss */
   .swiper-container-3d .swiper-slide-shadow-top {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  /* line 87, core.scss */
   .swiper-container-3d .swiper-slide-shadow-bottom {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 /* CSS Mode */
+/* line 94, core.scss */
 .swiper-container-css-mode > .swiper-wrapper {
   overflow: auto;
   scrollbar-width: none;
   /* For Firefox */
   -ms-overflow-style: none;
   /* For Internet Explorer and Edge */ }
+  /* line 98, core.scss */
   .swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
     display: none; }
+/* line 102, core.scss */
 .swiper-container-css-mode > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: start start; }
 
+/* line 107, core.scss */
 .swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
   scroll-snap-type: x mandatory; }
 
+/* line 112, core.scss */
 .swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
   scroll-snap-type: y mandatory; }
-
-/*# sourceMappingURL=core.css.map */

@@ -1,9 +1,11 @@
 /* Preloader */
+/* line 2, lazy.scss */
 :root {
   /*
   --swiper-preloader-color: var(--swiper-theme-color);
   */ }
 
+/* line 7, lazy.scss */
 .swiper-lazy-preloader {
   width: 42px;
   height: 42px;
@@ -20,14 +22,14 @@
   border-radius: 50%;
   border-top-color: transparent; }
 
+/* line 24, lazy.scss */
 .swiper-lazy-preloader-white {
   --swiper-preloader-color: #fff; }
 
+/* line 27, lazy.scss */
 .swiper-lazy-preloader-black {
   --swiper-preloader-color: #000; }
 
 @keyframes swiper-preloader-spin {
   100% {
     transform: rotate(360deg); } }
-
-/*# sourceMappingURL=lazy.css.map */
