@@ -40,20 +40,20 @@
 	}
 }
 
-.upper-menu__burger-menu {
-	background: url("img/burger.svg") no-repeat;
+.upper-menu__primary-button--burger-menu {
+	background-image: url("img/burger.svg");
 }
 
-.upper-menu__button-call {
-	background: url("img/call.svg") no-repeat;
+.upper-menu__primary-button--button-call {
+	background-image: url("img/call.svg");
 }
 
-.upper-menu__button-chat {
-	background: url("img/chat.svg") no-repeat;
+.upper-menu__primary-button--button-chat {
+	background-image: url("img/chat.svg");
 }
 
-.upper-menu__button-profile {
-	background: url("img/profile.svg") no-repeat;
+.upper-menu__primary-button--button-profile {
+	background-image: url("img/profile.svg");
 	position: relative;
 	margin-right: 48px;
 }
@@ -90,12 +90,12 @@
 	top: 12px;
 }
 
-.upper-menu__button-repair {
-	background: url("img/repair.svg") no-repeat;
+.upper-menu__primary-button--button-repair {
+	background-image: url("img/repair.svg");
 }
 
-.upper-menu__button-status {
-	background: url("img/checkstatus.svg") no-repeat;
+.upper-menu__primary-button--button-status {
+	background-image: url("img/checkstatus.svg");
 	margin-left: 16px;
 }
 

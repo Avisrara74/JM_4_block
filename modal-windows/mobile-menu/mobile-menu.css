@@ -61,7 +61,7 @@
 		box-shadow: none;
 		z-index: 0;
 	}
-	.mobile-menu__button-burger {
+	.mobile-menu__primary-button--button-burger {
 		display: none;
 	}
 	a.mobile-menu__logo-wrap {
@@ -79,11 +79,11 @@
 }
 
 .mobile-menu__primary-button--button-burger {
-	background: url("img/burger.svg") no-repeat;
+	background-image: url("img/burger.svg");
 }
 
 .mobile-menu__primary-button--button-search {
-	background: url("img/search.svg") no-repeat;
+	background-image: url("img/search.svg");
 	margin-left: auto;
 }
 
@@ -167,13 +167,13 @@
 }
 
 .mobile-menu__primary-button--contact-phone {
-	background: url("img/phone.svg") no-repeat;
+	background-image: url("img/phone.svg");
 }
 .mobile-menu__primary-button--contact-chat {
-	background: url("img/chat.svg") no-repeat;
+	background-image: url("img/chat.svg");
 }
 .mobile-menu__primary-button--contact-profile {
-	background: url("img/profile.svg") no-repeat;
+	background-image: url("img/profile.svg");
 }
 
 .mobile-menu__contact-links {

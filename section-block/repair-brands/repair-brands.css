@@ -72,13 +72,16 @@
 	height: 22px;
 	width: 22px;
 	left: 0;
-	top: -2px;
+	background-position: 50% 50%;
 	position: absolute;
+	transform: scale(1);
+	transition: transform 0.3s;
 }
 
-.repair-brands_hide {
-	display: none;
+.repair-items__see-more-arrow:before {
+	transform: scaleY(-1);
 }
+
 
 @media only screen and (min-width: 768px) {
 	.repair-brands__list-wrap {

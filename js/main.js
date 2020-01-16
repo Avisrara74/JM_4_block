@@ -5,7 +5,7 @@ let blur_effect = body.querySelector(".blur-effect_hidden");
 
 let modal_feedback = document.querySelector(".modal-feedback");
 
-let open_feedback_modal = document.querySelector(".upper-menu__button-chat");
+let open_feedback_modal = document.querySelector(".upper-menu__primary-button--button-chat");
 open_feedback_modal.addEventListener("click", function() {
 	modal_feedback.classList.add("modal-feedback_visible");
 
@@ -14,7 +14,7 @@ open_feedback_modal.addEventListener("click", function() {
 	close_call_modal_func();
 });
 
-let close_feedback_modal = modal_feedback.querySelector(".modal-feedback__close-button");
+let close_feedback_modal = modal_feedback.querySelector(".modal-feedback__primary-button--close-button");
 close_feedback_modal.addEventListener("click", function() {
 	close_feedback_modal_func();
 	blur_effect_off();
@@ -24,7 +24,7 @@ close_feedback_modal.addEventListener("click", function() {
 
 let modal_call = document.querySelector(".modal-call");
 
-let open_call_modal = document.querySelector(".upper-menu__button-call");
+let open_call_modal = document.querySelector(".upper-menu__primary-button--button-call");
 open_call_modal.addEventListener("click", function() {
 	modal_call.classList.add("modal-call_visible");
 
@@ -34,21 +34,18 @@ open_call_modal.addEventListener("click", function() {
 });
 
 
-let close_button_call_modal = modal_call.querySelector(".modal-call__close-button");
+let close_button_call_modal = modal_call.querySelector(".modal-call__primary-button--close-button");
 
 close_button_call_modal.addEventListener("click", function() {
 	blur_effect_off();
 	close_call_modal_func();
 });
 
-
-
-
 /* mobile-menu */
 
 let mobile_menu = document.querySelector(".mobile-menu");
 
-let open_mobile_menu = document.querySelector(".upper-menu__burger-menu");
+let open_mobile_menu = document.querySelector(".upper-menu__primary-button--burger-menu");
 open_mobile_menu.addEventListener("click", function() {
 	mobile_menu.classList.add("mobile-menu_visible");
 
@@ -97,13 +94,55 @@ mobile_menu__modal_feedback.addEventListener("click", function () {
 	close_call_modal_func();
 });
 
-
 change_language.addEventListener('click', function(e) {
 	let className = deleteActiveClass(change_language, "mobile-menu__change-language");
 	deleteActiveClass(change_language, "mobile-menu__change-language_active");
 	target = e.target;
 	target.classList.add(className);
 });
+
+services = body.querySelector(".services");
+services__hidden_text_wrap = services.querySelector(".services__info-text-wrap");
+services__hidden_items = services__hidden_text_wrap.querySelectorAll(".services__hidden-text");
+services__see_more = services.querySelector(".services__see-more");
+
+services__see_more.addEventListener("click", function () {
+	if (services__hidden_items[services__hidden_items.length - 1].classList.contains("services__hidden-text")) {
+		services__see_more_open();
+	}
+	else {
+		services__see_more_close();
+	}
+});
+
+repair_brands = body.querySelector(".repair-brands");
+repair_items = body.querySelector(".repair-items");
+
+repair_brands__items = repair_brands.querySelectorAll(".repair-brands__list-item");
+repair_items__items = repair_items.querySelectorAll(".repair-items__list-item");
+
+repair_brands__see_more = repair_brands.querySelector(".repair-brands__see-more");
+repair_items__see_more = repair_items.querySelector(".repair_items__see-more");
+
+repair_brands__see_more.addEventListener("click", function () {
+	if(repair_brands__items[repair_brands__items.length - 1].style.display = "none") {
+		repair_brands__see_more_open();
+	}
+});
+
+let services__see_more_open = function () {
+	services__see_more.classList.add("services__see-more-arrow");
+	for (let i = 0; i < services__hidden_items.length; i++) {
+		services__hidden_items[i].classList.remove("services__hidden-text");
+	}
+}
+
+let services__see_more_close = function () {
+	services__see_more.classList.remove("services__see-more-arrow");
+	for (let i = 0; i < services__hidden_items.length; i++) {
+		services__hidden_items[i].classList.add("services__hidden-text");
+	}
+}
 
 let blur_effect_on = function () {
 	blur_effect.classList.add("blur-effect_visible");

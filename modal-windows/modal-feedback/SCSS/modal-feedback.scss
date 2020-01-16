@@ -68,10 +68,10 @@ $red-tint: #FF3E79;
 		}
 	}
 
-	&__close-button {
+	&__primary-button--close-button {
 		width: 40px;
 		height: 40px;
-		background: url("img/close.svg") no-repeat;
+		background-image: url("img/close.svg");
 		margin-bottom: 40px;
 		cursor: pointer;
 		transition: opacity 0.3s;

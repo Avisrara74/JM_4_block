@@ -61,23 +61,23 @@
         visibility: visible;
         transform: translateX(0px); } }
   /* line 72, SCSS/modal-call.scss */
-  .modal-call__close-button {
+  .modal-call__primary-button--close-button {
     width: 40px;
     height: 40px;
-    background: url("img/close.svg") no-repeat;
+    background-image: url("img/close.svg");
     margin-bottom: 40px;
     cursor: pointer;
     transition: opacity 0.3s; }
     @media screen and (min-width: 1440px) {
       /* line 72, SCSS/modal-call.scss */
-      .modal-call__close-button {
+      .modal-call__primary-button--close-button {
         position: absolute;
         margin-top: -8px;
         left: 0;
         margin-left: -72px;
         z-index: 10; } }
     /* line 88, SCSS/modal-call.scss */
-    .modal-call__close-button:hover {
+    .modal-call__primary-button--close-button:hover {
       opacity: 0.7; }
   /* line 93, SCSS/modal-call.scss */
   .modal-call__title {
