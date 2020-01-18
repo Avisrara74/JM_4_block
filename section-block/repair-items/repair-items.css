@@ -85,7 +85,14 @@
 	transform: scaleY(-1);
 }
 
+.repair-items--hide {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
+	li.repair-items__list-item--hidden {
+		display: none;
+	}
 	.repair-items_hide {
 		display: block;
 	}
@@ -123,25 +130,18 @@
 	}
 	.repair-items__list-item {
 		border: 1px solid #EAEAEA;
-		max-width: auto;
-		flex-grow: 1;
+		width: calc(33% - 24px);
 		margin-bottom: 16px;
+		margin-left: 0;
 		border-radius: 6px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		flex-basis: 30%;
 		background-color: #FFFFFF;
 	}
 
-	.repair-items__list-item:nth-of-type(n+4) {
-		display: none;
-	}
-
-	.repair-items__list-item:not(:nth-of-type(3n)) {
-		margin-right: 24px;
-	}
+	
 
 	.repair-items__see-more {
 		display: block;
@@ -154,20 +154,12 @@
 }
 
 @media only screen and (min-width: 1120px) {
-
-	.repair-items__list-item {
-		width: 224px;
-		flex-basis: 22%;
-	}
-
-	.repair-items__list-item:nth-of-type(-n+9) {
+	li.repair-items__list-item--hidden:nth-of-type(-n+4) {
 		display: flex;
 	}
-
-	.repair-items__list-item:nth-of-type(n+5) {
-		display: none;
+	.repair-items__list-item {
+		width: calc(25% - 32px);
 	}
-
 	.repair-items__list-item:not(:nth-of-type(3n)) {
 		margin-right: 0px;
 	}

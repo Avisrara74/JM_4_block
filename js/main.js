@@ -118,20 +118,64 @@ services__see_more.addEventListener("click", function () {
 repair_brands = body.querySelector(".repair-brands");
 repair_items = body.querySelector(".repair-items");
 
-repair_brands__items = repair_brands.querySelectorAll(".repair-brands__list-item");
-repair_items__items = repair_items.querySelectorAll(".repair-items__list-item");
+repair_brands__items = repair_brands.querySelectorAll(".repair-brands__list-item--hidden");
+repair_items__items = repair_items.querySelectorAll(".repair-items__list-item--hidden");
 
 repair_brands__see_more = repair_brands.querySelector(".repair-brands__see-more");
-repair_items__see_more = repair_items.querySelector(".repair_items__see-more");
+repair_items__see_more = repair_items.querySelector(".repair-items__see-more");
 
 repair_brands__see_more.addEventListener("click", function () {
-	if(repair_brands__items[repair_brands__items.length - 1].style.display = "none") {
+	if (repair_brands__items[repair_brands__items.length - 1].classList.contains("repair-brands__list-item--hidden")) {
 		repair_brands__see_more_open();
+	} else {
+		repair_brands__see_more_close();
 	}
 });
 
+repair_items__see_more.addEventListener("click", function () {
+	if (repair_items__items[repair_items__items.length - 1].classList.contains("repair-items__list-item--hidden")) {
+		repair_items__see_more_open();
+	} else {
+		repair_items__see_more_close();
+	}
+});
+
+
+let repair_items__see_more_open = function () {
+	repair_items__see_more.classList.add("repair-items__see-more-arrow");
+	repair_items__see_more.textContent = "Скрыть";
+	for (let i = 0; i < repair_items__items.length; i++) {
+		repair_items__items[i].classList.remove("repair-items__list-item--hidden");
+	}
+}
+
+let repair_items__see_more_close = function () {
+	repair_items__see_more.classList.remove("repair-items__see-more-arrow");
+	repair_items__see_more.textContent = "Читать далее";
+	for (let i = 0; i < repair_items__items.length; i++) {
+		repair_items__items[i].classList.add("repair-items__list-item--hidden");
+	}
+}
+
+let repair_brands__see_more_open = function () {
+	repair_brands__see_more.classList.add("repair-brands__see-more-arrow");
+	repair_brands__see_more.textContent = "Скрыть";
+	for (let i = 0; i < repair_brands__items.length; i++) {
+		repair_brands__items[i].classList.remove("repair-brands__list-item--hidden");
+	}
+}
+
+let repair_brands__see_more_close = function () {
+	repair_brands__see_more.classList.remove("repair-brands__see-more-arrow");
+	repair_brands__see_more.textContent = "Читать далее";
+	for (let i = 0; i < repair_brands__items.length; i++) {
+		repair_brands__items[i].classList.add("repair-brands__list-item--hidden");
+	}
+}
+
 let services__see_more_open = function () {
 	services__see_more.classList.add("services__see-more-arrow");
+	services__see_more.textContent = "Скрыть";
 	for (let i = 0; i < services__hidden_items.length; i++) {
 		services__hidden_items[i].classList.remove("services__hidden-text");
 	}
@@ -139,6 +183,7 @@ let services__see_more_open = function () {
 
 let services__see_more_close = function () {
 	services__see_more.classList.remove("services__see-more-arrow");
+	services__see_more.textContent = "Читать далее";
 	for (let i = 0; i < services__hidden_items.length; i++) {
 		services__hidden_items[i].classList.add("services__hidden-text");
 	}

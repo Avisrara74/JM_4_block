@@ -78,12 +78,18 @@
 	transition: transform 0.3s;
 }
 
-.repair-items__see-more-arrow:before {
+.repair-brands__see-more-arrow:before {
 	transform: scaleY(-1);
 }
 
+.repair-brands--hide {
+	display: none;
+}
 
 @media only screen and (min-width: 768px) {
+	li.repair-brands__list-item--hidden {
+		display: none;
+	}
 	.repair-brands__list-wrap {
 		transform: translateX(0px) !important;
 	}
@@ -120,9 +126,8 @@
 	}
 	.repair-brands__list-item {
 		border: 1px solid #EAEAEA;
-		width: 220px;
-		max-width: auto;
-		flex-grow: 1;
+		width: calc(33% - 24px);
+		margin-left: 0;
 		height: 72px;
 		margin-bottom: 16px;
 		border-radius: 6px;
@@ -130,16 +135,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		flex-basis: 30%;
 		background-color: #FFFFFF;
-	}
-
-	.repair-brands__list-item:nth-of-type(n+7) {
-		display: none;
-	}
-
-	.repair-brands__list-item:not(:nth-of-type(3n)) {
-		margin-right: 24px;
 	}
 
 	.repair-brands__see-more {
@@ -154,16 +150,11 @@
 
 @media only screen and (min-width: 1120px) {
 	.repair-brands__list-item {
-		width: 224px;
-		flex-basis: 22%;
+		width: calc(25% - 32px);
 	}
 
-	.repair-brands__list-item:nth-of-type(-n+9) {
+	li.repair-brands__list-item--hidden:nth-of-type(-n+8) {
 		display: flex;
-	}
-
-	.repair-brands__list-item:nth-of-type(n+9) {
-		display: none;
 	}
 
 	.repair-brands__list-item:not(:nth-of-type(3n)) {
