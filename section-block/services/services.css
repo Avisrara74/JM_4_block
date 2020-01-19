@@ -7,6 +7,9 @@
 .services__header {
 	position: relative;
 	display: flex;
+	display: -webkit-box; 
+	display: -ms-flexbox;  
+	display: -webkit-flex; 
 	height: 100%;
 }
 
@@ -58,7 +61,11 @@
 
 	.services__user-repair-buttons_hidden {
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		align-items: center;
+		-webkit-box-align: center;
 	}
 
 	.services__header:before {
@@ -67,11 +74,16 @@
 
 	.services__user-repair-buttons-wrap {
 		justify-content: flex-end;
+		-webkit-box-pack: flex-end;
 		flex-grow: 1;
 	}
 	.services__user-repair-button-wrap {
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		align-items: center;
+		-webkit-box-align: center;
 	}
 
 	.services__repair-buttons {
@@ -106,9 +118,14 @@
 		margin: 8px 32px;
 		overflow: visible;
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		flex-direction: row;
+		-webkit-box-orient: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		-webkit-box-pack: space-between;
 		max-width: 1120px;
 	}
 	.services__list-item:last-child {
@@ -167,41 +184,26 @@
 	margin-left: -16px;
 }
 
-.services__see-more {
-	font-size: 16px;
-	font-weight: bolder;
-	position: relative;
-	padding-left: 32px;
-	cursor: pointer;
-}
-
-.services__see-more:before {
-	content: "";
-	background-image: url("img/expand.svg");
-	height: 22px;
-	width: 22px;
-	left: 0;
-	position: absolute;
-	background-position: 50% 50%;
-	transform: scaleY(1);
-	transition: transform 0.3s;
-}
-
-.services__see-more-arrow:before {
-	transform: scaleY(-1);
-}
-
 .services__hidden-text {
 	display: none;
+}
+
+.services__see-more {
+	margin-top: 8px;
 }
 
 @media only screen and (min-width: 768px) {
 	.services__info {
 		margin: 0px 24px;
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		flex-direction: row;
+		-webkit-box-orient: row;
 		min-width: 700px;
 		align-items: flex-start;
+		-webkit-box-align: flex-start;
 	}
 
 	.services__info-text p:first-child {

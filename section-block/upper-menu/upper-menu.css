@@ -6,8 +6,13 @@
 .upper-menu__items {
 	padding: 16px 16px;
 	display: flex;
+	display: -webkit-box; 
+	display: -ms-flexbox;  
+	display: -webkit-flex; 
+	-webkit-box-orient: row;
 	flex-direction: row;
 	justify-content: space-between;
+	-webkit-box-pack: space-between;
 }
 
 @media only screen and (min-width: 768px) {
@@ -18,15 +23,21 @@
 
 .upper-menu__items-wrap {
 	display: flex;
+	display: -webkit-box; 
+	display: -ms-flexbox;  
+	display: -webkit-flex;
 	align-items: center;
+	-webkit-box-align: center;
 }
 
 .upper-menu__items-wrap:first-child {
 	justify-content: flex-start;
+	-webkit-box-pack: flex-end;
 }
 
 .upper-menu__items-wrap:last-child {
 	justify-content: flex-end;
+	-webkit-box-pack: flex-end;
 }
 
 .upper-menu__item_hidden {

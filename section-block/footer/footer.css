@@ -10,9 +10,15 @@
 @media only screen and (min-width: 768px) {
 	.footer {
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex;
 		flex-direction: row;
+		-webkit-box-orient: row;
 		justify-content: space-between;
+		-webkit-box-pack: space-between;
 		align-items: flex-start;
+		-webkit-box-align: flex-start;
 		padding: 0px 32px 32px 32px;
 	}
 

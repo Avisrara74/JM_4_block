@@ -30,7 +30,11 @@
   padding: 24px 16px;
   transition: transform 0.5s;
   visibility: hidden;
-  transform: translateX(400px); }
+  transform: translateX(400px);
+  -ms-transform: translateX(400px);
+  -webkit-transform: translateX(400px);
+  -moz-transform: translateX(400px);
+  -o-transform: translateX(400px); }
   @media screen and (min-width: 360px) {
     /* line 25, SCSS/modal-feedback.scss */
     .modal-feedback {
@@ -41,26 +45,46 @@
       padding: 40px 32px;
       max-width: 440px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-      transform: translateX(550px); } }
-  /* line 51, SCSS/modal-feedback.scss */
+      transform: translateX(550px);
+      -ms-transform: translateX(550px);
+      -webkit-transform: translateX(550px);
+      -moz-transform: translateX(550px);
+      -o-transform: translateX(550px); } }
+  /* line 59, SCSS/modal-feedback.scss */
   .modal-feedback_hidden {
     visibility: visible;
-    transform: translateX(400px); }
+    transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    -webkit-transform: translateX(400px);
+    -moz-transform: translateX(400px);
+    -o-transform: translateX(400px); }
     @media screen and (min-width: 1440px) {
-      /* line 51, SCSS/modal-feedback.scss */
+      /* line 59, SCSS/modal-feedback.scss */
       .modal-feedback_hidden {
         visibility: visible;
-        transform: translateX(550px); } }
-  /* line 61, SCSS/modal-feedback.scss */
+        transform: translateX(550px);
+        -ms-transform: translateX(550px);
+        -webkit-transform: translateX(550px);
+        -moz-transform: translateX(550px);
+        -o-transform: translateX(550px); } }
+  /* line 77, SCSS/modal-feedback.scss */
   .modal-feedback_visible {
     visibility: visible;
-    transform: translateX(0px); }
+    transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px); }
     @media screen and (min-width: 1440px) {
-      /* line 61, SCSS/modal-feedback.scss */
+      /* line 77, SCSS/modal-feedback.scss */
       .modal-feedback_visible {
         visibility: visible;
-        transform: translateX(0px); } }
-  /* line 71, SCSS/modal-feedback.scss */
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px); } }
+  /* line 95, SCSS/modal-feedback.scss */
   .modal-feedback__primary-button--close-button {
     width: 40px;
     height: 40px;
@@ -69,24 +93,24 @@
     cursor: pointer;
     transition: opacity 0.3s; }
     @media screen and (min-width: 1440px) {
-      /* line 71, SCSS/modal-feedback.scss */
+      /* line 95, SCSS/modal-feedback.scss */
       .modal-feedback__primary-button--close-button {
         position: absolute;
         margin-top: -8px;
         left: 0;
         margin-left: -72px;
         z-index: 10; } }
-    /* line 87, SCSS/modal-feedback.scss */
+    /* line 111, SCSS/modal-feedback.scss */
     .modal-feedback__primary-button--close-button:hover {
       opacity: 0.7; }
-  /* line 92, SCSS/modal-feedback.scss */
+  /* line 116, SCSS/modal-feedback.scss */
   .modal-feedback__title {
     position: relative; }
     @media screen and (min-width: 1440px) {
-      /* line 92, SCSS/modal-feedback.scss */
+      /* line 116, SCSS/modal-feedback.scss */
       .modal-feedback__title {
         margin-top: 0; } }
-    /* line 99, SCSS/modal-feedback.scss */
+    /* line 123, SCSS/modal-feedback.scss */
     .modal-feedback__title:before {
       content: "";
       height: 37px;
@@ -100,19 +124,19 @@
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%; }
       @media screen and (min-width: 1440px) {
-        /* line 99, SCSS/modal-feedback.scss */
+        /* line 123, SCSS/modal-feedback.scss */
         .modal-feedback__title:before {
           left: -32px; } }
-  /* line 122, SCSS/modal-feedback.scss */
+  /* line 146, SCSS/modal-feedback.scss */
   .modal-feedback__textarea {
     height: 118px;
     margin-bottom: 0;
     resize: none; }
-  /* line 128, SCSS/modal-feedback.scss */
+  /* line 152, SCSS/modal-feedback.scss */
   .modal-feedback__accept-text {
     color: #7E7E82;
     font-size: 14px; }
-    /* line 132, SCSS/modal-feedback.scss */
+    /* line 156, SCSS/modal-feedback.scss */
     .modal-feedback__accept-text .modal-feedback__accept-link {
       color: #FF3E79;
       text-decoration: none; }

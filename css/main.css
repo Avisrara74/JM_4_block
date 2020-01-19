@@ -29,16 +29,13 @@ body {
 	padding: 0;
   	margin: 0;
   	background-color: #F8F8F8;
+  	box-sizing: border-box;
+	font-family: "TTLakes-Medium";
 }
 
 *, *:before, *:after {
 	box-sizing: inherit;
 	outline: none;
-}
-
-body {
-	box-sizing: border-box;
-	font-family: "TTLakes-Medium";
 }
 
 .body__scroll-hidden {
@@ -56,6 +53,7 @@ p {
 @media only screen and (min-width: 1440px) {
 	.pc_body {
 		overflow-x: hidden;
+		position: relative;
 	}
 	.pc_main {
 		padding-left: 320px;
@@ -64,10 +62,11 @@ p {
 
 .blur-effect_visible {
 	transition: opacity 0.3s;
-	margin-top: -440px;
 	position: fixed;
-	height: 8888px;
-	width: 8888px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	background-color: #fff;
 	opacity: 0.96;
 	z-index: 2;

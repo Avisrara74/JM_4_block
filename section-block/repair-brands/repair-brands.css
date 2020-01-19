@@ -6,8 +6,13 @@
 	border: 1px solid #EAEAEA;
 	background-color: #fff;
 	display: flex;
+	display: -webkit-box; 
+	display: -ms-flexbox;  
+	display: -webkit-flex; 
 	flex-direction: row;
+	-webkit-box-orient: row;
 	justify-content: space-between;
+	-webkit-box-pack: space-between;
 	border-radius: 6px;
 	max-height: 72px;
 	margin: 0 auto 40px auto;
@@ -56,32 +61,6 @@
 
 /* 768+ */
 
-.repair-brands__see-more {
-	font-size: 16px;
-	font-weight: bolder;
-	position: relative;
-	padding-left: 32px;
-	cursor: pointer;
-	transition: all 0.5s;
-	margin-top: 0;
-}
-
-.repair-brands__see-more:before {
-	content: "";
-	background: url("img/expand.svg") no-repeat;
-	height: 22px;
-	width: 22px;
-	left: 0;
-	background-position: 50% 50%;
-	position: absolute;
-	transform: scale(1);
-	transition: transform 0.3s;
-}
-
-.repair-brands__see-more-arrow:before {
-	transform: scaleY(-1);
-}
-
 .repair-brands--hide {
 	display: none;
 }
@@ -90,8 +69,15 @@
 	li.repair-brands__list-item--hidden {
 		display: none;
 	}
+	.repair-brands--hide {
+		display: block;
+	}
 	.repair-brands__list-wrap {
 		transform: translateX(0px) !important;
+		-ms-transform: translateX(0px) !important;
+		-webkit-transform: translateX(0px) !important;
+		-moz-transform: translateX(0px) !important;
+		-o-transform: translateX(0px) !important;
 	}
 	.repair-brands__list-item-img:first-child {
 		margin-left: 16px;
@@ -116,56 +102,69 @@
 		padding: 0px 24px;
 	}
 
-	.swiper-wrapper {
+	.repair-brands__list-wrap {
 		background-color: #F8F8F8;
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		flex-direction: row;
+		-webkit-box-orient: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		-webkit-box-pack: flex-start;
 		padding-left: 0px;
 	}
 	.repair-brands__list-item {
 		border: 1px solid #EAEAEA;
-		width: calc(33% - 24px);
+		width: calc(33.3% - 16px);
 		margin-left: 0;
 		height: 72px;
 		margin-bottom: 16px;
 		border-radius: 6px;
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 		flex-direction: row;
+		-webkit-box-orient: row;
 		align-items: center;
+		-webkit-box-align: center;
 		justify-content: space-between;
+		-webkit-box-pack: space-between;
 		background-color: #FFFFFF;
 	}
 
-	.repair-brands__see-more {
-		display: block;
-		margin-left: 24px;
+	.repair-brands__list-item:nth-of-type(3n) {
+		margin-right: 0px;
 	}
 
 	.swiper-pagination {
 		display: none;
 	}
+	.repair-brands__see-more {
+		margin-left: 24px;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
 	.repair-brands__list-item {
-		width: calc(25% - 32px);
+		width: calc(25% + 4px - 24px);
 	}
-
+	
 	li.repair-brands__list-item--hidden:nth-of-type(-n+8) {
 		display: flex;
+		display: -webkit-box; 
+		display: -ms-flexbox;  
+		display: -webkit-flex; 
 	}
-
 	.repair-brands__list-item:not(:nth-of-type(3n)) {
 		margin-right: 0px;
 	}
-
 	.repair-brands__list-item:not(:nth-of-type(4n)) {
-		margin-right: 32px;
+		margin-right: 24px;
 	}
-	.repair-brands__see-more {
-		display: block;
-		margin-left: 32px;
+	.repair-brands__list-item:nth-of-type(4n) {
+		margin-right: 0px;
 	}
 }

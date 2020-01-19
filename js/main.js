@@ -101,10 +101,12 @@ change_language.addEventListener('click', function(e) {
 	target.classList.add(className);
 });
 
+/* see more buttons*/
+
 services = body.querySelector(".services");
 services__hidden_text_wrap = services.querySelector(".services__info-text-wrap");
 services__hidden_items = services__hidden_text_wrap.querySelectorAll(".services__hidden-text");
-services__see_more = services.querySelector(".services__see-more");
+services__see_more = services.querySelector(".see-more");
 
 services__see_more.addEventListener("click", function () {
 	if (services__hidden_items[services__hidden_items.length - 1].classList.contains("services__hidden-text")) {
@@ -121,8 +123,8 @@ repair_items = body.querySelector(".repair-items");
 repair_brands__items = repair_brands.querySelectorAll(".repair-brands__list-item--hidden");
 repair_items__items = repair_items.querySelectorAll(".repair-items__list-item--hidden");
 
-repair_brands__see_more = repair_brands.querySelector(".repair-brands__see-more");
-repair_items__see_more = repair_items.querySelector(".repair-items__see-more");
+repair_brands__see_more = repair_brands.querySelector(".see-more");
+repair_items__see_more = repair_items.querySelector(".see-more");
 
 repair_brands__see_more.addEventListener("click", function () {
 	if (repair_brands__items[repair_brands__items.length - 1].classList.contains("repair-brands__list-item--hidden")) {
@@ -141,8 +143,9 @@ repair_items__see_more.addEventListener("click", function () {
 });
 
 
+/* functions */
 let repair_items__see_more_open = function () {
-	repair_items__see_more.classList.add("repair-items__see-more-arrow");
+	repair_items__see_more.classList.add("see-more-arrow");
 	repair_items__see_more.textContent = "Скрыть";
 	for (let i = 0; i < repair_items__items.length; i++) {
 		repair_items__items[i].classList.remove("repair-items__list-item--hidden");
@@ -150,7 +153,7 @@ let repair_items__see_more_open = function () {
 }
 
 let repair_items__see_more_close = function () {
-	repair_items__see_more.classList.remove("repair-items__see-more-arrow");
+	repair_items__see_more.classList.remove("see-more-arrow");
 	repair_items__see_more.textContent = "Читать далее";
 	for (let i = 0; i < repair_items__items.length; i++) {
 		repair_items__items[i].classList.add("repair-items__list-item--hidden");
@@ -158,7 +161,7 @@ let repair_items__see_more_close = function () {
 }
 
 let repair_brands__see_more_open = function () {
-	repair_brands__see_more.classList.add("repair-brands__see-more-arrow");
+	repair_brands__see_more.classList.add("see-more-arrow");
 	repair_brands__see_more.textContent = "Скрыть";
 	for (let i = 0; i < repair_brands__items.length; i++) {
 		repair_brands__items[i].classList.remove("repair-brands__list-item--hidden");
