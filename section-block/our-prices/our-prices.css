@@ -229,6 +229,10 @@
 }
 
 @media only screen and (min-width: 1120px) {
+	.our-prices__wrap {
+		max-width: 1120px;
+		margin: 0px auto;
+	}
 	.our-prices__hint, 
 	.our-prices__get-offer {
 		padding-left: 32px;

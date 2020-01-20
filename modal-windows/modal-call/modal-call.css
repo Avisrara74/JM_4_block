@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  height: 9999px;
+  bottom: 0;
   z-index: 10;
   background-color: #ffffff;
   padding: 24px 16px;
@@ -34,7 +34,8 @@
   -ms-transform: translateX(400px);
   -webkit-transform: translateX(400px);
   -moz-transform: translateX(400px);
-  -o-transform: translateX(400px); }
+  -o-transform: translateX(400px);
+  overflow-y: scroll; }
   @media screen and (min-width: 360px) {
     /* line 26, SCSS/modal-call.scss */
     .modal-call {
@@ -45,8 +46,9 @@
       padding: 40px 32px;
       max-width: 440px;
       box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
-      transform: translateX(550px); } }
-  /* line 56, SCSS/modal-call.scss */
+      transform: translateX(550px);
+      overflow-y: auto; } }
+  /* line 58, SCSS/modal-call.scss */
   .modal-call_hidden {
     visibility: visible;
     transform: translateX(400px);
@@ -55,7 +57,7 @@
     -moz-transform: translateX(400px);
     -o-transform: translateX(400px); }
     @media screen and (min-width: 1440px) {
-      /* line 56, SCSS/modal-call.scss */
+      /* line 58, SCSS/modal-call.scss */
       .modal-call_hidden {
         visibility: visible;
         transform: translateX(550px);
@@ -63,7 +65,7 @@
         -webkit-transform: translateX(550px);
         -moz-transform: translateX(550px);
         -o-transform: translateX(550px); } }
-  /* line 74, SCSS/modal-call.scss */
+  /* line 76, SCSS/modal-call.scss */
   .modal-call_visible {
     visibility: visible;
     transform: translateX(0px);
@@ -72,7 +74,7 @@
     -moz-transform: translateX(0px);
     -o-transform: translateX(0px); }
     @media screen and (min-width: 1440px) {
-      /* line 74, SCSS/modal-call.scss */
+      /* line 76, SCSS/modal-call.scss */
       .modal-call_visible {
         visibility: visible;
         transform: translateX(0px);
@@ -80,7 +82,7 @@
         -webkit-transform: translateX(0px);
         -moz-transform: translateX(0px);
         -o-transform: translateX(0px); } }
-  /* line 92, SCSS/modal-call.scss */
+  /* line 94, SCSS/modal-call.scss */
   .modal-call__primary-button--close-button {
     width: 40px;
     height: 40px;
@@ -89,24 +91,24 @@
     cursor: pointer;
     transition: opacity 0.3s; }
     @media screen and (min-width: 1440px) {
-      /* line 92, SCSS/modal-call.scss */
+      /* line 94, SCSS/modal-call.scss */
       .modal-call__primary-button--close-button {
         position: absolute;
         margin-top: -8px;
         left: 0;
         margin-left: -72px;
         z-index: 10; } }
-    /* line 108, SCSS/modal-call.scss */
+    /* line 110, SCSS/modal-call.scss */
     .modal-call__primary-button--close-button:hover {
       opacity: 0.7; }
-  /* line 113, SCSS/modal-call.scss */
+  /* line 115, SCSS/modal-call.scss */
   .modal-call__title {
     position: relative; }
     @media screen and (min-width: 1440px) {
-      /* line 113, SCSS/modal-call.scss */
+      /* line 115, SCSS/modal-call.scss */
       .modal-call__title {
         margin-top: 0; } }
-    /* line 120, SCSS/modal-call.scss */
+    /* line 122, SCSS/modal-call.scss */
     .modal-call__title:before {
       content: "";
       height: 37px;
@@ -120,19 +122,19 @@
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%; }
       @media screen and (min-width: 1440px) {
-        /* line 120, SCSS/modal-call.scss */
+        /* line 122, SCSS/modal-call.scss */
         .modal-call__title:before {
           left: -32px; } }
-  /* line 143, SCSS/modal-call.scss */
+  /* line 145, SCSS/modal-call.scss */
   .modal-call__textarea {
     height: 118px;
     margin-bottom: 0;
     resize: none; }
-  /* line 149, SCSS/modal-call.scss */
+  /* line 151, SCSS/modal-call.scss */
   .modal-call__accept-text {
     color: #7E7E82;
     font-size: 14px; }
-    /* line 153, SCSS/modal-call.scss */
+    /* line 155, SCSS/modal-call.scss */
     .modal-call__accept-text .modal-call__accept-link {
       color: #FF3E79;
       text-decoration: none; }

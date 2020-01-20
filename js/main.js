@@ -1,6 +1,13 @@
 let body = document.querySelector("body");
 let blur_effect = body.querySelector(".blur-effect_hidden");
 
+blur_effect.addEventListener("click", function () {
+	close_mobile_menu_func();
+	close_call_modal_func();
+	close_feedback_modal_func();
+	blur_effect_off();
+});
+
 /* modal-feedback */
 
 let modal_feedback = document.querySelector(".modal-feedback");
@@ -247,6 +254,7 @@ let swiper_inicialization = function() {
 	let repair_brands = new Swiper('.repair-brands__swiper-container', {
 	  pagination: {
 	    el: '.swiper-pagination',
+	    clickable: true,
 	  },
 	  width: 240,
 	  height: 72,
@@ -256,6 +264,7 @@ let swiper_inicialization = function() {
 	let repair_items = new Swiper('.repair-items__swiper-container', {
 	  pagination: {
 	    el: '.swiper-pagination',
+	    clickable: true,
 	  },
 	  width: 240,
 	  spaceBetween: 16,
@@ -264,6 +273,7 @@ let swiper_inicialization = function() {
 	let our_prices = new Swiper('.our-prices__swiper-container', {
 	  pagination: {
 	    el: '.swiper-pagination',
+	    clickable: true,
 	  },
 	  width: 228,
 	  spaceBetween: 16,

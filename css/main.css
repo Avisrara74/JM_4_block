@@ -51,12 +51,12 @@ p {
 }
 
 @media only screen and (min-width: 1440px) {
-	.pc_body {
-		overflow-x: hidden;
-		position: relative;
+	.body-wrap {
+		display: flex;
+		flex-direction: row;
 	}
-	.pc_main {
-		padding-left: 320px;
+	.content-wrap {
+		flex-grow: 1;
 	}
 }
 

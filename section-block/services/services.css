@@ -84,6 +84,12 @@
 		display: -webkit-flex; 
 		align-items: center;
 		-webkit-box-align: center;
+		cursor: pointer;
+		transition: opacity 0.7s;
+	}
+
+	.services__user-repair-button-wrap:hover > .services__repair-buttons {
+		opacity: 0.7;
 	}
 
 	.services__repair-buttons {
@@ -169,6 +175,7 @@
 .services__list-item:first-child {
 	background-color: #FFFFFF;
 	border: 2px solid #B8FFEC;
+	border-radius: 6px;
 }
 
 /* info */
