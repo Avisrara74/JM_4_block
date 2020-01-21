@@ -48,6 +48,10 @@
 	background-image: url("img/checkstatus.svg");
 }
 
+.services__see-more {
+	margin-bottom: 16px;
+}
+
 @media only screen and (min-width: 768px) {
 	.main__services {
 		margin-top: 24px;
